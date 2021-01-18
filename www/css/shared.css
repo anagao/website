@@ -1,0 +1,8 @@
+/* due to fixed navbar */
+body { 
+    padding-top: 25px;
+}
+
+.container {
+    max-width: 78em; /* matches resume, so lines break similar to printed resume */
+}

@@ -1,0 +1,43 @@
+/* Insert your custom styles here */
+
+/* makes it a little more tighter */
+ul, ol{
+	margin: 0.5em 0 0.5em 1.5em;
+	line-height: 1.4em;
+}
+
+#description {
+	vertical-align: text-top;
+	font-weight: 400;
+}
+
+#description li{
+	margin: 0;
+}
+
+#description a {
+	color: #5A5A5A;
+	text-decoration: none;
+}
+
+.highlight{
+	background-color: #E7D19A;
+	}
+
+table {
+	table-layout:fixed;
+}
+
+table th.side-header {
+	text-align: left;
+	padding: 1em;
+}
+
+h1.courseName {
+	padding: 0.25em;
+	font: 1.0em Arial,Helvetica,sans-serif;
+}
+
+@media only screen and (max-width: 640px) {
+/* Insert your mobile styles here */
+}

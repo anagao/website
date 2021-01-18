@@ -1,0 +1,21 @@
+name: Deploy to Xenon
+on: push
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: git checkout
+        uses: actions/checkout@main
+
+      - name: scp code
+        uses: appleboy/scp-action@master
+        with:
+          host: xenon.stanford.edu
+          username: anagao
+          password: ${{ secrets.STANFORD_PASSWORD }}
+          
+          source: "www/*"
+          target: "www"
+          overwrite: true
+          strip_components: 1

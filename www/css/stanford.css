@@ -1,0 +1,28 @@
+.GPA {
+	font-style: italic;
+}
+
+.highlight {
+	color: #d9230f; /* when you click on course name, course name turns red */
+}
+
+.collapseIcon {
+	cursor: pointer;
+}
+
+h1.courseName {
+	cursor: pointer;
+	/* override default h1 behavior in table */
+	font-size: 1.0em;
+	margin-top: 0;
+	margin-bottom: 0;
+	padding: 0.2em;
+}
+
+td ul {
+	padding-left: 1em; /* so ul isn't indented as much */
+}
+
+#descriptionModal h2 { /* headers like "Syllabus", "Assignments" */
+	font-size: 1.25em;	
+}

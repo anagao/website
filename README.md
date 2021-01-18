@@ -1,0 +1,1 @@
+See [Github wiki](https://github.com/anagao/website/wiki)

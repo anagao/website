@@ -1,0 +1,161 @@
+.Body {
+    color: #493b3b;
+    font-family: 'HoeflerText-Regular', 'Hoefler Text', 'Times New Roman', 'serif';
+    font-size: 14px;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: normal;
+    letter-spacing: 0;
+    line-height: 17px;
+    margin-bottom: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-top: 0px;
+    opacity: 1.00;
+    padding-bottom: 0px;
+    padding-top: 0px;
+    text-align: left;
+    text-decoration: none;
+    text-indent: 0px;
+    text-transform: none;
+}
+.Body_Small {
+    color: #3b3525;
+    font-family: 'HoeflerText-Regular', 'Hoefler Text', 'Times New Roman', 'serif';
+    font-size: 11px;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: normal;
+    letter-spacing: 0;
+    line-height: 16px;
+    margin-bottom: 0px;
+    margin-left: 10px;
+    margin-right: 5px;
+    margin-top: 0px;
+    opacity: 1.00;
+    padding-bottom: 0px;
+    padding-top: 0px;
+    text-align: left;
+    text-decoration: none;
+    text-indent: 0px;
+    text-transform: none;
+}
+.Free_Form {
+    color: #493b3b;
+    font-family: 'HoeflerText-Regular', 'Hoefler Text', 'Times New Roman', 'serif';
+    font-size: 11px;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: normal;
+    letter-spacing: 0;
+    line-height: 16px;
+    margin-bottom: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-top: 0px;
+    opacity: 1.00;
+    padding-bottom: 2px;
+    padding-top: 0px;
+    text-align: left;
+    text-decoration: none;
+    text-indent: 0px;
+    text-transform: none;
+}
+.Header {
+    color: #aa6700;
+    font-family: 'HoeflerText-Regular', 'Hoefler Text', 'Times New Roman', 'serif';
+    font-size: 36px;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: normal;
+    letter-spacing: 0;
+    line-height: 43px;
+    margin-bottom: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-top: 0px;
+    opacity: 1.00;
+    padding-bottom: 0px;
+    padding-top: 0px;
+    text-align: center;
+    text-decoration: none;
+    text-indent: 0px;
+    text-transform: none;
+}
+.Heading_1 {
+    color: #867856;
+    font-family: 'HoeflerText-Regular', 'Hoefler Text', 'Times New Roman', 'serif';
+    font-size: 20px;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: normal;
+    letter-spacing: 0;
+    line-height: 24px;
+    margin-bottom: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-top: 0px;
+    opacity: 1.00;
+    padding-bottom: 8px;
+    padding-top: 0px;
+    text-align: left;
+    text-decoration: none;
+    text-indent: 0px;
+    text-transform: none;
+}
+.Normal {
+    padding: 4px;
+}
+.graphic_generic_body_textbox_style_default {
+    background: transparent;
+    float: none;
+    margin: 0px;
+    opacity: 1.00;
+}
+.graphic_generic_description_textbox_style_default {
+    background: transparent;
+    float: none;
+    margin: 0px;
+    opacity: 1.00;
+}
+.graphic_generic_header_textbox_style_default {
+    background: transparent;
+    float: none;
+    margin: 0px;
+    opacity: 1.00;
+}
+.graphic_generic_title_textbox_style_default {
+    background: transparent;
+    float: none;
+    margin: 0px;
+    opacity: 1.00;
+}
+.graphic_textbox_style_default {
+    background: transparent;
+    float: none;
+    margin: 0px;
+    opacity: 1.00;
+}
+a {
+    color: #aa6700;
+    text-decoration: none;
+}
+a:visited {
+    color: #493b3b;
+    text-decoration: none;
+}
+a:hover {
+    color: #171d00;
+    text-decoration: underline;
+}
+div {
+    overflow: visible;
+}
+img {
+    border: none;
+}
+.InlineBlock {display: inline; }
+.InlineBlock {display: inline-block; }
+.tinyText {
+    font-size: 1px;
+}

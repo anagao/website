@@ -1,0 +1,116 @@
+.Body {
+    color: #3f3f3f;
+    font-family: 'Verdana', 'sans-serif';
+    font-size: 12px;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: normal;
+    letter-spacing: 0;
+    line-height: 18px;
+    margin-bottom: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-top: 0px;
+    opacity: 1.00;
+    padding-bottom: 7px;
+    padding-top: 0px;
+    text-align: left;
+    text-decoration: none;
+    text-indent: 0px;
+    text-transform: none;
+}
+.Body_Bullet {
+    color: #3f3f3f;
+    font-family: 'Verdana', 'sans-serif';
+    font-size: 11px;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: normal;
+    letter-spacing: 0;
+    line-height: 16px;
+    margin-bottom: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-top: 0px;
+    opacity: 1.00;
+    padding-bottom: 0px;
+    padding-top: 0px;
+    text-align: left;
+    text-decoration: none;
+    text-indent: 5px;
+    text-transform: none;
+}
+.Title {
+    color: #999999;
+    font-family: 'LucidaGrande', 'Lucida Grande', 'Lucida Sans Unicode', 'sans-serif';
+    font-size: 28px;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: bold;
+    letter-spacing: 0;
+    line-height: 33px;
+    margin-bottom: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-top: 0px;
+    opacity: 1.00;
+    padding-bottom: 0px;
+    padding-top: 0px;
+    text-align: center;
+    text-decoration: none;
+    text-indent: 0px;
+    text-transform: none;
+}
+.Normal {
+    padding: 4px;
+}
+.graphic_generic_title_textbox_style_default {
+    background: transparent;
+    float: none;
+    margin: 0px;
+    opacity: 1.00;
+}
+.graphic_shape_style_default, .graphic_shape_style_default_17, .graphic_shape_style_default_24 {
+    background: #ffffff;
+    float: none;
+    margin: 0px;
+    opacity: 1.00;
+}
+.graphic_shape_style_default_17, .graphic_shape_style_default_24 {
+    background: #f5f3f3;
+}
+.graphic_shape_style_default_24 {
+    background: #ffffff;
+}
+.graphic_textbox_layout_style_default {
+    padding: 4px;
+}
+.graphic_textbox_style_default, .graphic_textbox_style_default_2 {
+    background: transparent;
+    float: none;
+    margin: 0px;
+    opacity: 1.00;
+}
+a {
+    color: #a50021;
+    text-decoration: none;
+}
+a:visited {
+    color: #a50021;
+    text-decoration: none;
+}
+a:hover {
+    color: #de2739;
+    text-decoration: none;
+}
+div {
+    overflow: visible;
+}
+img {
+    border: none;
+}
+.InlineBlock {display: inline; }
+.InlineBlock {display: inline-block; }
+.tinyText {
+    font-size: 1px;
+}
