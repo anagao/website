@@ -1,5 +1,3 @@
-@import url(//fonts.googleapis.com/css?family=Playfair+Display:900|Josefin+Sans:400);
-
 *, *:after, *:before { -webkit-box-sizing: border-box; box-sizing: border-box; }
 .clearfix:before, .clearfix:after {display: table;  content: ''; }
 .clearfix:after { clear: both; }
@@ -236,7 +234,6 @@ a:focus {
 	margin: 0;
 	padding: 1em;
 	font-size: 1.85em;
-	/* font-family: "Playfair Display", Georgia, serif; */
 	line-height: 1;
 }
 

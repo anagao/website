@@ -14,6 +14,7 @@
 
     <!-- FontAwesome v5.15.2 -->
     <link href="css/fontawesome.min.css" rel="stylesheet">
+    <link href="css/fontawesome.brands.min.css" rel="stylesheet">
     <link href="css/fontawesome.solid.min.css" rel="stylesheet">
 
     <link href="css/shared.css" rel="stylesheet">
@@ -22,36 +23,31 @@
   </head>
 
   <body>
-    <!-- navbar START -->
-    <nav class="navbar navbar-default navbar-fixed-top">
-      <div class="container">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <!-- on smaller-width screens (mobile), press = button to see navbar items -->
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggler" data-toggle="collapse" data-target=".navbar-collapse">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <a class="navbar-brand" href="./"><b>Aaron Nagao</b></a>
+      </div>
 
-        <!-- on smaller-width screens (mobile), press = button to see navbar items -->
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-          <a class="navbar-brand" href="./"><b>Aaron Nagao</b></a>
-        </div>
-
-        <div class="navbar-collapse collapse">
-          <ul class="nav navbar-nav">
-            <li>
-                <a href="./"><i class="fas fa-home"></i> Home</a>
+      <div class="navbar-collapse collapse">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+                <a class="nav-link" href="./"><i class="fas fa-home"></i> Home</a>
             </li>
-            <li class="active">
-                <a href="#"><i class="fas fa-file"></i> Resume</a>
+            <li class="nav-item active">
+                <a class="nav-link" href="#"><i class="fas fa-file"></i> Resume</a>
             </li>
-            <li>
-                <a href="stanford.html"><i class="fas fa-tree"></i> Stanford University</a>
+            <li class="nav-item">
+                <a class="nav-link" href="stanford.html"><i class="fas fa-tree"></i> Stanford University</a>
             </li>
-            <li>
-                <a href="kamehameha.html"><i class="fas fa-graduation-cap"></i> Kamehameha High School</a>
+            <li class="nav-item">
+                <a class="nav-link" href="kamehameha.html"><i class="fas fa-graduation-cap"></i> Kamehameha High School</a>
             </li>
-            <li class="dropdown">
-              <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fas fa-fast-backward"></i> Website Archive <b class="caret"></b></a>
+            <li class="nav-item dropdown">
+              <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown"><i class="fas fa-fast-backward"></i> Website Archive <b class="caret"></b></a>
               <ul class="dropdown-menu">
                 <li><a href="archive.html">Archive Landing Page</a></li>
                 <li class="divider"></li>
@@ -66,7 +62,6 @@
             </li>
           </ul>
         </div><!-- /navbar-collapse -->
-      </div><!-- /container -->
     </nav>
     <!-- navbar END -->
     
@@ -77,7 +72,7 @@
             <p>
                 <i class="fas fa-envelope"></i> <a href="mailto:anagao@alumni.stanford.edu">anagao@alumni.stanford.edu</a>
                   •   
-                <i class="fas fa-linkedin"></i> <a href="https://www.linkedin.com/in/aaron-nagao">LinkedIn</a>
+                <i class="fab fa-linkedin"></i> <a href="https://www.linkedin.com/in/aaron-nagao">LinkedIn</a>
                 
                 <!-- do NOT display link to download resume -->
                 <span style="display:none">
@@ -128,7 +123,7 @@
 
             <li>
                 <time datetime="2013-03" class="cbp_tmtime"><span>Spring</span> <span>2013</span></time>
-                <i class="cbp_tmicon fas fa-angellist"></i>
+                <i class="cbp_tmicon fas fa-globe-asia"></i>
                 <div class="cbp_tmlabel">
                     <h3>Doshisha University
                     <span>Study abroad in Kyoto, Japan</span></h3>
@@ -171,7 +166,7 @@
                 <time datetime="2014-07" class="cbp_tmtime">
                     <span>Summer</span>    <span>2014</span>
                 </time>
-                <i class="cbp_tmicon fas fa-html5"></i>
+                <i class="cbp_tmicon fab fa-html5"></i>
                 <div class="cbp_tmlabel">
                     <h3>MemoryLane<span>Co-Founder, Lightspeed Venture Partners Summer Fellowship</span></h3>
                     <ul>
@@ -185,7 +180,7 @@
                 <time datetime="2014-01" class="cbp_tmtime">
                     <span>January-June</span>    <span>2014</span>
                 </time>
-                <i class="cbp_tmicon fas fa-android"></i>
+                <i class="cbp_tmicon fab fa-android"></i>
                 <div class="cbp_tmlabel">
                     <h3>BMW<span>(sponsor for senior project)  Android/Web Developer</span></h3>
                     <ul>
@@ -199,7 +194,7 @@
                 <time datetime="2013-07" class="cbp_tmtime">
                     <span>Summer</span>    <span>2013</span>
                 </time>
-                <i class="cbp_tmicon fas fa-line-chart"></i>
+                <i class="cbp_tmicon fas fa-chart-line"></i>
                 <div class="cbp_tmlabel">
                     <h3>Rakuten (Tokyo, Japan)<span>Web Development Intern, Open Services Platform Dept.</span></h3>
                     <ul>
@@ -229,7 +224,7 @@
                 <time datetime="2011-07" class="cbp_tmtime">
                     <span>Summer</span>    <span>2011</span>
                 </time>
-                <i class="cbp_tmicon fas fa-area-chart"></i>
+                <i class="cbp_tmicon fas fa-chart-area"></i>
                 <div class="cbp_tmlabel">
                     <h3>Cisco Systems<span>Software Engineering Intern, Cisco Choice Program</span></h3>
                     <ul>
@@ -242,7 +237,7 @@
                 <time datetime="2010-05" class="cbp_tmtime">
                     <span>May-July</span>    <span>2010</span>
                 </time>
-                <i class="cbp_tmicon fas fa-file-excel-o"></i>
+                <i class="cbp_tmicon fas fa-file-excel"></i>
                 <div class="cbp_tmlabel">
                     <h3>Nan Inc.<span>IT Intern</span></h3>
                     <ul>
@@ -303,7 +298,7 @@
                 <time datetime="2010-09" class="cbp_tmtime">
                     <span>2010-</span>    <span>2015</span>
                 </time>
-                <i class="cbp_tmicon fas fa-briefcase"></i>
+                <i class="cbp_tmicon fas fa-users"></i>
                 <div class="cbp_tmlabel">
                     <h3>Stanford Hawaii Club/ Hui o Hawaii<span>Member</span></h3>
                 </div>
@@ -313,7 +308,7 @@
                 <time datetime="2011-09" class="cbp_tmtime">
                     <span>Sept. 2011,</span>    <span>2012</span>
                 </time>
-                <i class="cbp_tmicon fas fa-briefcase"></i>
+                <i class="cbp_tmicon fas fa-users"></i>
                 <div class="cbp_tmlabel">
                     <h3>Stanford New Student Orientation<span>Volunteer</span></h3>
                 </div>
@@ -323,7 +318,7 @@
                 <time datetime="2010-08" class="cbp_tmtime">
                     <span>August</span>    <span>2010</span>
                 </time>
-                <i class="cbp_tmicon fas fa-briefcase"></i>
+                <i class="cbp_tmicon fas fa-laptop-code"></i>
                 <div class="cbp_tmlabel">
                     <h3>Stanford Summer Engineering Academy</h3>
                     <ul>
@@ -337,7 +332,7 @@
                 <time datetime="2005-08" class="cbp_tmtime">
                     <span>2005-</span>    <span>2010</span>
                 </time>
-                <i class="cbp_tmicon fas fa-briefcase"></i>
+                <i class="cbp_tmicon fas fa-calculator"></i>
                 <div class="cbp_tmlabel">
                     <h3>High School Math Team<span> Treasurer, National/State Competitor</span></h3>
                     <ul>
@@ -350,7 +345,7 @@
                 <time datetime="2007-08" class="cbp_tmtime">
                     <span>2007-</span>    <span>2010</span>
                 </time>
-                <i class="cbp_tmicon fas fa-briefcase"></i>
+                <i class="cbp_tmicon fas fa-users"></i>
                 <div class="cbp_tmlabel">
                     <h3><a href="http://kapalama.ksbe.edu/nhs/index.php?a=roster&amp;b=graduates">National Honor Society</a><span>Webmaster/Treasurer</span></h3>
                     <ul>

@@ -22,36 +22,31 @@
   </head>
 
   <body>
-    <!-- navbar START -->
-    <nav class="navbar navbar-default navbar-fixed-top">
-      <div class="container">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <!-- on smaller-width screens (mobile), press = button to see navbar items -->
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggler" data-toggle="collapse" data-target=".navbar-collapse">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <a class="navbar-brand" href="./"><b>Aaron Nagao</b></a>
+      </div>
 
-        <!-- on smaller-width screens (mobile), press = button to see navbar items -->
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-          <a class="navbar-brand" href="./"><b>Aaron Nagao</b></a>
-        </div>
-
-        <div class="navbar-collapse collapse">
-          <ul class="nav navbar-nav">
-            <li>
-                <a href="./"><i class="fas fa-home"></i> Home</a>
+      <div class="navbar-collapse collapse">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+                <a class="nav-link" href="./"><i class="fas fa-home"></i> Home</a>
             </li>
-            <li>
-                <a href="resume.html"><i class="fas fa-file"></i> Resume</a>
+            <li class="nav-item">
+                <a class="nav-link" href="resume.html"><i class="fas fa-file"></i> Resume</a>
             </li>
-            <li class="active">
-                <a href="#"><i class="fas fa-tree"></i> Stanford University</a>
+            <li class="nav-item active">
+                <a class="nav-link" href="#"><i class="fas fa-tree"></i> Stanford University</a>
             </li>
-            <li>
-                <a href="kamehameha.html"><i class="fas fa-graduation-cap"></i> Kamehameha High School</a>
+            <li class="nav-item">
+                <a class="nav-link" href="kamehameha.html"><i class="fas fa-graduation-cap"></i> Kamehameha High School</a>
             </li>
-            <li class="dropdown">
-              <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fas fa-fast-backward"></i> Website Archive <b class="caret"></b></a>
+            <li class="nav-item dropdown">
+              <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown"><i class="fas fa-fast-backward"></i> Website Archive <b class="caret"></b></a>
               <ul class="dropdown-menu">
                 <li><a href="archive.html">Archive Landing Page</a></li>
                 <li class="divider"></li>
@@ -66,7 +61,6 @@
             </li>
           </ul>
         </div><!-- /navbar-collapse -->
-      </div><!-- /container -->
     </nav>
     <!-- navbar END -->
 
