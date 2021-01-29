@@ -10,16 +10,11 @@
     <title>Aaron Nagao | Stanford 4-Year Plan</title>
 
     <!-- Simplex Bootstrap theme (http://bootswatch.com/simplex/) -->
-    <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
 
-    <!-- Font Awesome icons (loaded via MaxCDN) -->
-    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
-
-    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!--[if lt IE 9]>
-      <script src="../../assets/js/html5shiv.js"></script>
-      <script src="../../assets/js/respond.min.js"></script>
-    <![endif]-->
+    <!-- FontAwesome v5.15.2 -->
+    <link href="css/fontawesome.min.css" rel="stylesheet">
+    <link href="css/fontawesome.solid.min.css" rel="stylesheet">
 
     <link href="css/shared.css" rel="stylesheet">
     <!-- Custom styles for this template -->
@@ -44,19 +39,19 @@
         <div class="navbar-collapse collapse">
           <ul class="nav navbar-nav">
             <li>
-                <a href="./"><i class="fa fa-home"></i> Home</a>
+                <a href="./"><i class="fas fa-home"></i> Home</a>
             </li>
             <li>
-                <a href="resume.html"><i class="fa fa-file-text"></i> Resume</a>
+                <a href="resume.html"><i class="fas fa-file"></i> Resume</a>
             </li>
             <li class="active">
-                <a href="#"><i class="fa fa-tree"></i> Stanford University</a>
+                <a href="#"><i class="fas fa-tree"></i> Stanford University</a>
             </li>
             <li>
-                <a href="kamehameha.html"><i class="fa fa-graduation-cap"></i> Kamehameha High School</a>
+                <a href="kamehameha.html"><i class="fas fa-graduation-cap"></i> Kamehameha High School</a>
             </li>
             <li class="dropdown">
-              <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-fast-backward"></i> Website Archive <b class="caret"></b></a>
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fas fa-fast-backward"></i> Website Archive <b class="caret"></b></a>
               <ul class="dropdown-menu">
                 <li><a href="archive.html">Archive Landing Page</a></li>
                 <li class="divider"></li>
@@ -86,24 +81,24 @@
         <header class="table-header">
             <div class="btn-group btn-group-sm" data-toggle="buttons">
                 <label class="btn btn-primary" id="all-filter">
-                    <input type="radio">All
+                    <input type="radio" name="subjectOptions">All
                 </label>
                 <label class="btn btn-primary" id="CS-filter">
-                    <input type="radio">Computer Science
+                    <input type="radio" name="subjectOptions">Computer Science
                 </label>
                 <label class="btn btn-primary" id="math-filter">
-                    <input type="radio">Math
+                    <input type="radio" name="subjectOptions">Math
                 </label>
                 <label class="btn btn-primary" id="masters-filter">
-                    <input type="radio">Master's
+                    <input type="radio" name="subjectOptions">Master's
                 </label>
             </div>
 
             <!-- final GPAs -->
-            <p class="GPA pull-right" id="all-GPA"></p>
-            <p class="GPA pull-right" id="CS-GPA">Computer Science GPA: 3.92</p>
-            <p class="GPA pull-right" id="MATH-GPA">Math GPA: 4.04</p>
-            <p class="GPA pull-right" id="masters-GPA">Master's GPA: 3.81</p>
+            <p class="GPA float-right" id="all-GPA"></p>
+            <p class="GPA float-right" id="CS-GPA">Computer Science GPA: 3.92</p>
+            <p class="GPA float-right" id="MATH-GPA">Math GPA: 4.04</p>
+            <p class="GPA float-right" id="masters-GPA">Master's GPA: 3.81</p>
         </header>
     
         <!-- four-year-plan START -->
@@ -141,7 +136,7 @@
         
             <tbody>
             <tr>
-                <th scope="row"><span class="glyphicon glyphicon-chevron-down collapseIcon" id="FR-collapseIcon"></span> Fr 2010-11</th>
+                <th scope="row"><span class="fas fa-chevron-down collapseIcon" id="FR-collapseIcon"></span> Fr 2010-11</th>
                 <td>
                     <!-- Freshman-Fall -->
                     <ul>
@@ -469,7 +464,7 @@
             </tr>
         
             <tr>
-                <th scope="row"><span class="glyphicon glyphicon-chevron-down collapseIcon" id="SO-collapseIcon"></span> So 2011-12</th>
+                <th scope="row"><span class="fas fa-chevron-down collapseIcon" id="SO-collapseIcon"></span> So 2011-12</th>
                 <td>
                     <!-- Soph-Fall -->
                     <ul>
@@ -838,7 +833,7 @@
             -->
             
             <tr>
-                <th scope="row"><span class="glyphicon glyphicon-chevron-down collapseIcon" id="JR-collapseIcon"></span> Jr 2012-13</th>
+                <th scope="row"><span class="fas fa-chevron-down collapseIcon" id="JR-collapseIcon"></span> Jr 2012-13</th>
                 <td>
                     <!-- JR-Fall -->
                     <ul>
@@ -1191,7 +1186,7 @@
             -->
             
             <tr>
-                <th scope="row"><span class="glyphicon glyphicon-chevron-down collapseIcon" id="SR-collapseIcon"></span> Sr 2013-14</th>
+                <th scope="row"><span class="fas fa-chevron-down collapseIcon" id="SR-collapseIcon"></span> Sr 2013-14</th>
                 <td>
                 <!-- SR-Fall -->
                     <ul>
@@ -1414,7 +1409,7 @@
             </tr>
         
             <tr>
-                <th scope="row"><span id="MS-collapseIcon" class="glyphicon glyphicon-chevron-down collapseIcon"></span> MS 2014-15</th>
+                <th scope="row"><span id="MS-collapseIcon" class="fas fa-chevron-down collapseIcon"></span> MS 2014-15</th>
                 <td>
                 <!-- MS-Fall -->
                     <ul>
@@ -1617,9 +1612,8 @@
                   
       <!-- FOOTER -->
       <footer>
-        <i>Powered by a <a href="http://getbootstrap.com/javascript/#modals">Bootstrap modal</a> and <a href="http://www.jquery.com">jQuery</a> DOM manipulation.</i>
+        <i>Powered by a <a href="https://getbootstrap.com/docs/4.6/components/modal/">Bootstrap 4 modal</a> and <a href="http://www.jquery.com">jQuery</a> DOM manipulation.</i>
         <p class="last-modified">Last modified: <!--#echo var="LAST_MODIFIED"--></p>
-        <p class="pull-right"><a href="#">Back to top</a></p>
       </footer>
         
     </div> <!-- ./pageContainer -->
@@ -1628,10 +1622,8 @@
     <!-- Bootstrap core JavaScript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
-    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script src="js/jquery-2.1.1.min.js"></script>
-    <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script src="js/bootstrap.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
     <script src="js/stanford.js"></script>
   </body>
 </html>

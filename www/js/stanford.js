@@ -1,12 +1,18 @@
 var currCourseElement = null;    //global variable
 
-$(document).ready(function () {
+var ready = (callback) => {
+  if (document.readyState != "loading") callback();
+  else document.addEventListener("DOMContentLoaded", callback);
+}
+
+ready(() => { 
+    /* Do things after DOM has fully loaded */ 
     /* ----- 1) Set on-click handlers ----- */
 
     //Click "Fr 10-11" -> show/hide the row
-    $("th .glyphicon").click(function () {
+    $("th .fas").click(function () {
         $(this).parent().siblings("td").toggle();
-        $(this).toggleClass("glyphicon-chevron-down glyphicon-chevron-right");
+        $(this).toggleClass("fa-chevron-down fa-chevron-right");
     });
 
     $(".courseName").click(function () {
