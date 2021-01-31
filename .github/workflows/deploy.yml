@@ -15,6 +15,7 @@ jobs:
           username: anagao
           password: ${{ secrets.STANFORD_PASSWORD }}
           
+          # copy www folder to anagao@xenon.stanford.edu:./
           source: "www"
-          target: "www"
-          rm: true
+          target: "."
+          overwrite: true
