@@ -1,0 +1,1576 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="The courses Aaron Nagao has taken as a Computer Science major at Stanford University." />
+    <meta name="author" content="Aaron Nagao">
+    <link rel="shortcut icon" href="../../assets/ico/favicon.png">
+
+    <title>Aaron Nagao | Stanford 4-Year Plan</title>
+
+    <!-- Simplex Bootstrap theme (http://bootswatch.com/simplex/) -->
+    <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="../../assets/js/html5shiv.js"></script>
+      <script src="../../assets/js/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Custom styles for this template -->
+    <link href="css/four-year-plan.css" rel="stylesheet">
+  </head>
+
+  <body>
+    
+    <!-- navbar START -->
+    <div class="navbar-wrapper">
+      <div class="container">
+        <div class="navbar navbar-default navbar-fixed-top">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <a class="navbar-brand" href="./">Aaron Nagao</a>
+            </div>
+            <div class="navbar-collapse collapse">
+
+              <ul class="nav navbar-nav">
+                <li><a href="./"><span class="glyphicon glyphicon-home"></span> <b>Home</b></a></li>
+                <li><a href="resume.html"><span class="glyphicon glyphicon-briefcase"></span> Resume</a></li>
+                <li class="active"><a href="#"><span class="glyphicon glyphicon-road"><!-- or glyphicon-tree-conifer --></span> Stanford 4-Year Plan</a></li>
+                <li><a href="kamehameha.html"><span class="glyphicon glyphicon-calendar"></span> Kamehameha Archive</a></li>
+                <li class="dropdown">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown"><span class="glyphicon glyphicon-fast-backward"></span> Website Archive <b class="caret"></b></a>
+                  <ul class="dropdown-menu">
+                    <li><a href="archive.html">Archive Landing Page</a></li>
+                    <li class="divider"></li>
+                    <li class="dropdown-header">List of Versions</li>
+                    <li><a href="archive/1/" target="_blank">Version 1 (2006)</a></li>
+                    <li><a href="archive/2/" target="_blank">Version 2 (2006-07)</a></li>
+                    <li><a href="archive/3/" target="_blank">Version 3 (2007-09)</a></li>
+                    <li><a href="archive/4/" target="_blank">Version 4 (2009-11)</a></li>
+                    <li><a href="archive/5/" target="_blank">Version 5 (2011-12)</a></li>
+                    <li><a href="archive/6/" target="_blank">Version 6 (2012-13)</a></li>
+                  </ul>
+                </li>
+              </ul>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- navbar END -->
+
+    <div class="container"> <!-- wrap the page (minus navbar) in a container for nice padding -->
+
+        <header class="page-header">
+            <h1>Stanford 4-Year Plan <small>as of August 2014</small></h1>
+        </header>
+
+        <p>At Stanford, I am currently a master's student in Computer Science. I received my B.S. in Computer Science with distinction in June 2014.</p>
+    
+        <header class="table-header">
+            <div class="btn-group btn-group-sm" data-toggle="buttons">
+                <p id="filterLabel">Filter courses by: </p>
+                <label class="btn btn-primary" id="all-filter">
+                    <input type="radio">All
+                </label>
+                <label class="btn btn-primary" id="CS-filter">
+                    <input type="radio">CS
+                </label>
+                <label class="btn btn-primary" id="math-filter">
+                    <input type="radio">Math
+                </label>
+                <label class="btn btn-primary" id="masters-filter">
+                    <input type="radio">Master's
+                </label>
+            </div>
+
+            <!-- as of 2014-08; up to and including 2013-2014 Spring -->
+            <p class="GPA pull-right" id="all-GPA">Undergraduate GPA: 3.958</p>
+            <p class="GPA pull-right" id="CS-GPA">Computer Science GPA: 3.962</p>
+            <p class="GPA pull-right" id="MATH-GPA">Math GPA: 4.088</p>
+            <p class="GPA pull-right" id="masters-GPA">Masters GPA: 3.860</p>
+        </header>
+    
+        <!-- four-year-plan START -->
+        <!-- Modal -->
+        <div class="modal fade" id="descriptionModal" tabindex="-1" role="dialog">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                <h4 class="modal-title" id="descriptionModal-title"></h4>
+              </div>
+              <div class="modal-body" id="descriptionModal-body"></div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <table id="four-year-plan-table" class="table table-striped">
+            <colgroup> <!-- fixed-width columns! -->
+                <col style="width: 10%" />
+                <col style="width: 30%" />
+                <col style="width: 30%" />
+                <col style="width: 30%" />
+            </colgroup>
+            <thead>
+            <tr>
+                <th scope="col">Year</th>
+                <th scope="col">Fall</th>
+                <th scope="col">Winter</th>
+                <th scope="col">Spring</th>
+            </tr>
+            </thead>
+        
+            <tbody>
+            <tr>
+                <th scope="row"><span class="glyphicon glyphicon-collapse-down collapseIcon" id="FR-collapseIcon"></span> Fr 10-11</th>
+                <td>
+                    <!-- Freshman-Fall -->
+                    <ul>
+                        <li class="CS">
+                            <h1 class="courseName">CS 103: Mathematical Foundations of Computing</h1>
+                            <section class="hiddenDescription">
+                                <p>Instructor: Plummer, R.</p>
+                                <p>A course on discrete math and automata.</p>
+                                <h2>Syllabus</h2>
+                                <ul>
+                                    <li>Logic, Sets, Relations, and Functions</li>
+                                    <li>Induction</li>
+                                    <li>Finite Automata, Regular Languages, Regular Expressions</li>
+                                    <li>Context-free Grammars</li>
+                                    <li>Computability, Turing Machines, Undecidability</li>
+                                    <li>Complexity and NP-completeness</li>
+                                </ul>
+                            </section>
+                        </li>
+                    
+                        <li class="MATH">
+                            <h1 class="courseName">MATH 51: Linear Algebra and Differential Calculus of Several Variables</h1>
+                            <section class="hiddenDescription">
+                                <p>Instructor: Licata, J.</p>
+                                <h2>Syllabus</h2>
+                                <ul>
+                                    <li>Geometry and algebra of vectors</li>
+                                    <li>Systems of linear equations</li>
+                                    <li>Matrices and linear transformations</li>
+                                    <li>Diagonalization and eigenvectors</li>
+                                    <li>Vector-valued functions and functions of several variables</li>
+                                    <li>Parametric curves</li>
+                                    <li>Partial derivatives and gradients</li>
+                                    <li>The derivative as a matrix</li>
+                                    <li>Chain rule in several variables</li>
+                                    <li>Constrained and unconstrained optimization</li>
+                                </ul>
+                            </section>
+                        </li>
+                    
+                        <li>
+                            <h1 class="courseName">IHUM 64: Journeys</h1>
+                            <section class="hiddenDescription">
+                                <p>Instructors: Wolff, T., Yearley, L.</p>
+                                <p>TF: Heald, A</p>
+                                <i>The journey is our most fundamental narrative, and no wonder; 
+                                we are all, from the day of our births, embarked on a constant passage through space and time 
+                                toward an end we can only think we know.</i>
+                                <h2>Essays</h2>
+                                    <ol>
+                                        <li>A Good Man is Hard to Define, on "A Good Man is Hard to Find"</li>
+                                        <li>The Flame of Desire, on <i>The Stranger</i></li>
+                                        <li>If Gods Accept Suffering..., on "Sorrow-Acre"</li>
+                                    </ol>
+                                <h2>Texts</h2>
+                                    <ul>
+                                        <li>"A Good Man is Hard to Find" and "Revelation," by Flannery O'Connor</li>
+                                        <li><i>The Stranger</i>, by Albert Camus</li>
+                                        <li><i>The Fire Next Time</i>, by James Baldwin</li>
+                                        <li><i>The Essential Zhuangzi</i></li>
+                                        <li>"The Cardinal's First Tale" and "Sorrow-Acre," by Isak Dinesen</li>
+                                        <li>"Song of my cares when going from the capital to Feng-xian," by Du Fu</li>
+                                    </ul>
+                            </section>
+                        </li>
+                    
+                        <li>
+                            <h1 class="courseName">PWR 1DH: The Virtue of Vice and the Vice of Virtue: The Rhetoric of Criminality</h1>
+                            <section class="hiddenDescription">
+                                <p>Instructor: Hunter, D.</p>
+                                <h2>Research-Based Argument</h2>
+                                    <h5>The Problem of Music Piracy and its Effects on the Value of Music</h5>
+                                    <ul>
+                                        <li>What is the scope of the problem?</li>
+                                        <li>Economics: The rationality of zero-cost</li>
+                                        <li>Targeting psychological motivations for piracy by enforcing legitimacy</li>
+                                        <li>Appealing to morality: Victimizing the record industry</li>
+                                        <li>Online music stores as an attractive, legal alternative to piracy</li>
+                                        <li>Piracy and the expectation of free music</li>
+                                    </ul>
+                                <h2>Papers</h2>
+                                <ul>
+                                    <li>Rhetorical Analysis: Abolition...beyond reasonable doubt?</li>
+                                    <li>Texts in Conversation: How Piracy Affects the Value of Music</li>
+                                    <li>Research-Based Argument: The Problem of Music Piracy and its Effects on the Value of Music</li>
+                                </ul>
+                            </section>
+                        </li>
+                    </ul>
+                </td>
+                <td>
+                    <!-- Freshman-Winter -->
+                    <ul>
+                        <li class="CS">
+                            <h1 class="courseName">CS 106X: Programming Abstractions (Accelerated)</h1>
+                            <section class="hiddenDescription">
+                                <p>Instructor: Cain, G.</p>
+                                <p>A classic CS2 course emphasizing common data abstractions and structures as well as recursion.</p>
+                                <h2>Assignments</h2>
+                                <ol>
+                                    <li>The Game of Life</li>
+                                    <li>Abstract Data Types- Client Applications
+                                        <ul>
+                                            <li>Random Writer</li>
+                                            <li>Word Ladder Solver</li>
+                                            <li>Maze Generator</li>
+                                        </ul>
+                                    </li>
+                                    <li>Boggle</li>
+                                    <li>Priority Queue- Binomial heap for O(log n) operations</li>
+                                    <li>Huffman Encoding- Binary tree</li>
+                                    <li>Pathfinder- Dijkstra's shortest-path, Kruskal's minimum spanning tree algorithms</li>
+                                    <li>Little Schemer- Scheme interpreter</li>
+                                </ol>
+                                <h2>Syllabus</h2>
+                                <ul>
+                                    <li>Basic C++ syntax, control idioms, program structures, strings, and libraries</li>
+                                    <li>Templates, abstract data types, containers, vectors, stacks, queues, sets, maps, scanners, and lexicons</li>
+                                    <li>Recursion, drawing examples from mathematics, graphics, and language</li>
+                                    <li>Advanced recursion, recursive backtracking, memoization</li>
+                                    <li>Memory, Memory Addresses, Pointers, and Dynamic Memory Allocation</li>
+                                    <li>Linked Lists and Their Variations</li>
+                                    <li>Hash Tables and Trees</li>
+                                    <li>Graphs and Fundamental Graph Algorithms</li>
+                                    <li>C++ Interfaces, Inheritance, and Class Hierarchies</li>
+                                    <li>Modern Programming Languages</li>
+                                </ul>
+                            </section>
+                        </li>
+                    
+                        <li class="MATH">
+                            <h1 class="courseName">MATH 53: Ordinary Differential Equations with Linear Algebra</h1>
+                            <section class="hiddenDescription">
+                                <p>Instructor: Brendle, S.</p>
+                                <p>TA: Mykhaylo Shkolnikov</p>
+                                <i>I would pretty much never use the Laplace transform, but the engineers are using it.
+                                <br />-Simon Brendle, 3/4/11</i>
+                                <h2>Syllabus</h2>
+                                <ul>
+                                    <li>Separation of variables</li>
+                                    <li>Integrating factors and exact differential equations</li>
+                                    <li>Systems of linear differential equations</li>
+                                    <li>Eigenvalues and eigenvectors</li>
+                                    <li>The method of variation of parameters</li>
+                                    <li>The Laplace transform</li>
+                                    <li>Systems of nonlinear differential equations</li>
+                                    <li>Conservation laws</li>
+                                </ul>
+                            </section>
+                        </li>
+                    
+                        <li>
+                            <h1 class="courseName">ECON 1A: Introductory Economics A</h1>
+                            <section class="hiddenDescription">
+                                <p>Instructor: Clerici-Arias, M.</p>
+                                <p>TA: Holger Fabian Sahl</p>
+                                <h2>Syllabus</h2>
+                                <ul>
+                                    <li>Scarcity, choice, and economic interaction</li>
+                                    <li>Supply and demand</li>
+                                    <li>Competitive markets</li>
+                                    <li>Labor markets</li>
+                                    <li>Production</li>
+                                    <li>Dynamics of competitive industries</li>
+                                    <li>Monopoly</li>
+                                    <li>Imperfect competition</li>
+                                    <li>Public goods and externalities</li>
+                                    <li>Asymmetric information</li>
+                                    <li>2008 financial crisis</li>
+                                    <li>International trade</li>
+                                    <li>Macroeconomics</li>
+                                </ul>
+                            </section>
+                        </li>
+                    
+                        <li>
+                            <h1 class="courseName">IHUM 28A: Poetic Justice: Order and Imagination in Russia</h1>
+                            <section class="hiddenDescription">
+                                <p>Instructor: Safran, G.</p>
+                                <p>TF: Roberts, T.</p>
+                                <i>Only in Russia is poetry respected - it gets people killed.
+                                Is there anywhere else where poetry is so common a motive for murder?
+                                -Osip Mandelstam</i>
+                                <h2>Essays</h2>
+                                <ol>
+                                    <li>Changing One's Self to Achieve the Good Life, on "Brother Isaac and the Demons" and "The Nose"</li>
+                                    <li>Dostoevsky's Use of Doubles to Explain a Single Character, on <i>The Brothers Karamazov</i></li>
+                                    <li>Agency Analyzed Through Polyphony, on <i>Hadji Murad</i></li>
+                                    <li>A National Identity Based on Contrast</li>
+                                </ol>
+                                <h2>Texts and Films</h2>
+                                <ul>
+                                    <li>Matthew (New Testament)</li>
+                                    <li>Various Russian medieval texts, fairytales, and poems</li>
+                                    <li>"The Nose," by Nikolai Gogol</li>
+                                    <li>"The Captain's Daughter," by Alexander Pushkin</li>
+                                    <li><i>The Brothers Karamazov</i>, by Fedor Dostoevsky</li>
+                                    <li><i>Hadji Murad</i>, by Lev Tolstoy</li>
+                                    <li><i>Rite of Spring</i>, by Igor Stravinsky</li>
+                                </ul>
+                            </section>
+                        </li>
+                    </ul>
+                </td>
+                <td>
+                    <!-- Freshman-Spring -->
+                    <ul>
+                        <li class="CS">
+                            <h1 class="courseName">CS 107: Computer Organization and Systems</h1>
+                            <section class="hiddenDescription">
+                                <p>Instructor: Zelenski, J.</p>
+                                <i>May you have 8 heads of wisdom!</i>
+                                <p>A course with the theme of taking students "from the hardware up to the source code". 
+                                Topics include machine architecture, memory models, data representation, and elements of compilation and concurrency.</p>
+                                <h2>Heap Allocator</h2>
+                                <p>Implemented malloc, realloc, and free in C, using <a href="http://g.oswego.edu/dl/html/malloc.html">GNU's dlmalloc</a> as a guide. 
+                                Achieved 69% heap memory utilization and 106% throughput (compared to GNU).</p>
+                                <h2>Assignments</h2>
+                                <ol>
+                                    <li>String fragment reassembly- C-strings</li>
+                                    <li>Spell correction</li>
+                                    <li>CVector/CMap implementation- void*</li>
+                                    <li>CSet implementation- bit vectors</li>
+                                    <li>Binary bomb- IA32 assembly</li>
+                                    <li>Crash reporter- runtime stack layout</li>
+                                    <li><b>Heap allocator</b></li>
+                                </ol>
+                                <h2>Syllabus</h2>
+                                <ul>
+                                    <li>Intro to systems, C basics, UNIX development tools</li>
+                                    <li>C pointers/arrays, C-strings</li>
+                                    <li>C generics, void*, function pointers, data representation</li>
+                                    <li>Computer architecture</li>
+                                    <li>IA32 assembly: addressing, arithmetic, control function calls, runtime stack</li>
+                                    <li>Compilation tool chain, linkers, loaders, address space</li>
+                                    <li>Heap implementation, memory hierarchy, caches, pipelining</li>
+                                    <li>Code optimization</li>
+                                </ul>
+                            </section>
+                        </li>
+                    
+                        <li class="CS">
+                            <h1 class="courseName">CS 1U: Practical Unix</h1>
+                            <section class="hiddenDescription">
+                                <p>Instructor: King, S.</p>
+                                <p>Student-initiated.</p>
+                                <h2>Syllabus</h2>
+                                <ul>
+                                    <li>Setting up Linux- shell, text editors</li>
+                                    <li>GDB / Buggy Code Competition</li>
+                                    <li>Grep / Regular Expression Competition</li>
+                                    <li>Scripting, including csh, bash, and Python scripts</li>
+                                    <li>Pipes, output redirection, and tools commonly used with pipes such as sed, awk, sort, comm, join, and uniq. Pipeline contest.</li>
+                                    <li>cURL, web scripting, twitter, accessing your email over command line</li>
+                                    <li>Setting up a LAMP stack and WordPress</li>
+                                    <li>Mish mash, including ssh tunneling, make, git, symbolic links, and w3m</li>
+                                </ul>
+                            </section>
+                        </li>
+                    
+                        <li class="MATH">
+                            <h1 class="courseName">MATH 52: Integral Calculus of Several Variables</h1>
+                            <section class="hiddenDescription">
+                                <p>Instructor: Brumfiel, G.</p>
+                                <i>The whole is the sum of its parts.</i>
+                                <br />
+                                <i>All integrals are limits of sums of products.</i>
+                                <h2>Syllabus</h2>
+                                <ul>
+                                    <li>Iterated integrals</li>
+                                    <li>Line and surface integrals</li>
+                                    <li>Vector analysis with applications to vector potentials and conservative vector fields</li>
+                                    <li>Divergence theorem</li>
+                                    <li>Theorems of Green, Gauss, and Stokes</li>
+                                </ul>
+                            </section>
+                        </li>
+                    
+                        <li class="MATH">
+                            <h1 class="courseName">MATH 113: Linear Algebra and Matrix Theory</h1>
+                            <section class="hiddenDescription">
+                                <p>Instructor: Licata, J.</p>
+                                <h2>Syllabus</h2>
+                                <ul>
+                                    <li>Vector spaces, subspaces, linear combinations, direct sums</li>
+                                    <li>Linear independence, bases, dimension</li>
+                                    <li>Linear maps, isomorphisms</li>
+                                    <li>Matrices, complex numbers, polynomials, eigenvalues</li>
+                                    <li>Eigenvalues, eigenvectors</li>
+                                    <li>Generalized eigenvectors, characteristic polynomial</li>
+                                    <li>Minimal polynomial, Jordan normal form</li>
+                                    <li>Inner products, orthonormal bases, linear functionals, adjoints</li>
+                                    <li>Fourier series, self-adjoint and normal operators</li>
+                                    <li>Spectral Theorem, Determinants</li>
+                                </ul>
+                            </section>
+                        </li>
+                    
+                        <li>
+                            <h1 class="courseName">IHUM 28B: Poetic Justice: Order and Imagination in Russia</h1>
+                            <section class="hiddenDescription">
+                                <p>Instructor: Skakov, N.</p>
+                                <p>TF: Matza, T.</p>
+                                <h2>Essays</h2>
+                                <ol>
+                                    <li>Calling for Change Through a Literary Superstructure, on <i>The Communist Manifesto</i> and <i>The Foundation Pit</i></li>
+                                    <li>A Higher Form of Justice, on <i>The Master and Margarita</i></li>
+                                    <li>Travel as a Means of Escape, on <i>Omon Ra</i> and "In a Room and a Half"</li>
+                                    <li>The Artistic Representation of a Just Order</li>
+                                </ol>
+                                <h2>Texts and Films</h2>
+                                <ul>
+                                    <li><i>The Communist Manifesto</i>, by Karl Marx and Friedrich Engels</li>
+                                    <li><i>The Foundation Pit</i>, by Andrei Platonov</li>
+                                    <li><i>The Master and Margarita</i>, by Mikhail Bulgakov</li>
+                                    <li><i>Omon Ra</i>, by Viktor Pelevin</li>
+                                    <li><i>Battleship Potemkin</i>, by Sergei Eisenstein</li>
+                                    <li><i>Night Watch</i>, by Timur Bekmambetov</li>
+                                    <li>Various Russian poems and essays</li>
+                                </ul>
+                            </section>
+                        </li>
+                    </ul>
+                </td>
+            </tr>
+        
+            <tr>
+                <th scope="row"><span class="glyphicon glyphicon-collapse-down collapseIcon" id="SO-collapseIcon"></span> So 11-12</th>
+                <td>
+                    <!-- Soph-Fall -->
+                    <ul>
+                        <li class="CS">
+                            <h1 class="courseName">CS 110: Principles of Computer Systems</h1>
+                            <section class="hiddenDescription">
+                                <p>Instructor: Rosenblum, M.</p>
+                                <i>Enforced modularity</i>
+                                <p>The theme of this course is "modern computer systems and networks".
+                                Topics include processes and concurrency mechanics, file systems, virtualization, networking and distributed systems. </p>
+                                <h2>Assignments</h2>
+                                <ol>
+                                    <li>Read files from a version 6 Unix disk</li>
+                                    <li>Add concurrency support to a banking system</li>
+                                    <li>Performance optimizations of a disk image search engine</li>
+                                    <li>Web interface to a disk image search engine</li>
+                                </ol>
+                                <h2>Syllabus</h2>
+                                <ul>
+                                    <li>Complexity</li>
+                                    <li>Elements of Computer Systems Organization</li>
+                                    <li>Naming and Layering</li>
+                                    <li>Client/Services</li>
+                                    <li>Virtualization</li>
+                                    <li>Synchronization</li>
+                                    <li>Virtual memory, processors, and machines</li>
+                                    <li>Performance</li>
+                                    <li>Multi-level memories</li>
+                                    <li>Scheduling</li>
+                                    <li>Networking</li>
+                                    <li>Security, cryptography</li>
+                                </ul>
+                            </section>
+                        </li>
+                    
+                        <li class="CS">
+                            <h1 class="courseName">CS 161: Design and Analysis of Algorithms</h1>
+                            <section class="hiddenDescription">
+                                <p>Instructor: Roughgarden, T.</p>
+                                <p>An advanced course in the design and analysis of algorithms, 
+                                presenting various data models and a range of algorithmic techniques.</p>
+                                <h2>Programming Project</h2>
+                                <p>With Kevin, we implemented Kosaraju’s algorithm in C++ to find the strongly-connected components of a directed graph in O(m+n) time.
+                                We needed to use a stack data-structure rather than recursion in order to prevent stack overflow when analyzing graphs of 1 million nodes and 7 million edges.</p>
+                                <h2>Syllabus</h2>
+                                <ul>
+                                    <li>Big-oh notation and its variants, relative growth of different functions</li>
+                                    <li>Recurrence relations: substitution and master methods</li>
+                                    <li>Divide and conquer algorithms</li>
+                                    <li>Graph algorithms
+                                        <ul>
+                                            <li>Depth- and breadth- first search</li>
+                                            <li>Strongly connected components</li>
+                                            <li>Minimum spanning trees</li>
+                                            <li>Dijkstra's shortest-path algorithm</li>
+                                            <li>Relevant data structures</li>
+                                        </ul>
+                                    </li>
+                                    <li>Greedy algorithms</li>
+                                    <li>Basic analysis of randomized algorithms</li>
+                                    <li>Quicksort</li>
+                                    <li>Hashing</li>
+                                    <li>Red-black trees</li>
+                                    <li>Dynamic programming</li>
+                                    <li>Analysis of approximation algorithms</li>
+                                </ul>
+                            </section>
+                        </li>
+                    
+                        <li>
+                            <h1 class="courseName">ENGR 60: Engineering Economy</h1>
+                            <section class="hiddenDescription">
+                                <p>Instructor: Primbs, J.</p>
+                                <h2>Syllabus</h2>
+                                <ul>
+                                    <li>Tools and Theory: PW, IRR, AE, etc.</li>
+                                    <li>Cash Flow Modeling: depreciation, taxes, etc.</li>
+                                    <li>Uncertainty, Decision Analysis</li>
+                                </ul>
+                            </section>
+                        </li>
+                    
+                        <li>
+                            <h1 class="courseName">JAPANLNG 7: First-Year Japanese Language, Culture, and Communication</h1>
+                            <section class="hiddenDescription">
+                                <p>先生: Okano</p>
+                                <p></p>
+                            </section>
+                        </li>
+                    
+                        <li>
+                            <h1 class="courseName">CHEMENG 60Q: Environmental Regulation and Policy</h1>
+                            <section class="hiddenDescription">
+                                <p>Instructors: Libicki, S., Robertson, C.</p>
+                                <h2>Presentations</h2>
+                                <ol>
+                                    <li>Air Quality Policy in China, as the Beijing Environmental Protection Agency</li>
+                                    <li>How to Reduce Transportation-Related Greenhouse Gas Emissions, as Ford</li>
+                                    <li>Water Pollution and the Textile Industry: Framework for a Toxic-Free Future, as Greenpeace</li>
+                                </ol>
+                                <h2>Syllabus</h2>
+                                <ul>
+                                    <li>Air Pollution</li>
+                                    <li>Global Warming</li>
+                                    <li>Toxins in the Supply Chain</li>
+                                    <li>Ecosystem Services</li>
+                                    <li>Indoor Air Quality</li>
+                                    <li>Waste Management</li>
+                                    <li>Sustainability</li>
+                                    <li>Offshore Oil Drilling</li>
+                                </ul>
+                            </section>
+                        </li>
+                    </ul>
+                </td>
+                <td>
+                    <!-- Soph-Winter -->
+                    <ul>
+                        <li class="CS">
+                            <h1 class="courseName">CS 108: Object-Oriented Systems Design</h1>
+                            <section class="hiddenDescription">
+                                <p>Instructor: Young, P.</p>
+                                <h2>QuizPop!</h2>
+                                <p>With a group of 5, developed a quiz website using 62 server-side Java classes, 20 JSPs, and a MySQL database for user-generated quizzes.</p>
+                                <h2>Assignments (Java)</h2>
+                                <ol>
+                                    <li>CodeCamp- String, CharGrid, TetrisGrid, Collections classes</li>
+                                    <li>Tetris- pieces, board, AI</li>
+                                    <li>Sudoku solver, MySQL database GUI</li>
+                                    <li>Threads </li>
+                                    <li>Web- User login system, basic store website</li>
+                                    <li><b>QuizPop- quiz website</b></li>
+                                </ol>
+                                <h2>Syllabus</h2>
+                                <ul>
+                                    <li>Java Review, Collections, Unit Testing</li>
+                                    <li>Encapsulation and Inheritance</li>
+                                    <li>Swing GUI Programming</li>
+                                    <li>Databases</li>
+                                    <li>Programming with Threads</li>
+                                    <li>Web Development: Server- and client- side</li>
+                                </ul>
+                            </section>
+                        </li>
+                    
+                        <li class="MATH">
+                            <h1 class="courseName">MATH 104: Applied Matrix Theory</h1>
+                            <section class="hiddenDescription">
+                                <p>Instructor: Candes, E.</p>
+                                <p>First A- in a math class.</p>
+                                <h2>Syllabus</h2>
+                                <ul>
+                                    <li>Matrices, vectors and their products (review) </li>
+                                    <li>Matrices as linear transformations </li>
+                                    <li>Rank of a matrix, linear independence and the four fundamental subspaces of a matrix </li>
+                                    <li>Orthogonality and isometries </li>
+                                    <li>The QR decomposition </li>
+                                    <li>Eigenvalues and the spectral decomposition of symmetric matrices </li>
+                                    <li>The singular value decomposition and its applications </li>
+                                    <li>The conditioning of a matrix </li>
+                                    <li>Least squares problems </li>
+                                    <li>Algorithms for solving systems of linear equations and least-squares problems </li>
+                                    <li>Iterative methods for solving linear systems: the method of conjugate gradients </li>
+                                    <li>Applications: multivariate linear regression and principal component analysis </li>
+                                </ul>
+                            </section>
+                        </li>
+                    
+                        <li>
+                            <h1 class="courseName">PWR 2GAW: Global Exchange: Intercultural Communication</h1>
+                            <section class="hiddenDescription">
+                                <p>Instructor: Watters, A.</p>
+                                <i>There are no foreign lands. It is the traveler only who is foreign.<br />
+                                -Robert Louis Stevenson</i>
+                                <h2>Research-Based Argument</h2>
+                                <h5>The Rest vs. The West: Understanding Anti-Americanism in the Arab World</h5>
+                                <ul>
+                                    <li>Foreign policy is the major determinant of Arab anti-Americanism</li>
+                                    <li>U.S. foreign policies interfere in the Arab World</li>  
+                                    <li>The perceived hypocrisy and violence behind U.S. foreign policies</li>
+                                    <li>U.S. democracy perceived as supplanting Islam</li>
+                                    <li>Counterarguments: Reaffirming the importance of policy</li>
+                                    <li>Conclusion: Coordinating U.S. foreign policy with the Arab League</li>
+                                </ul>
+                            </section>
+                        </li>
+                    
+                        <li>
+                            <h1 class="courseName">JAPANLNG 8: First-Year Japanese Language, Culture, and Communication</h1>
+                            <section class="hiddenDescription">
+                                <p>先生: Okano</p>
+                                <p>I learned to write my last name in kanji.</p>
+                                <p>Skit: Kelleen asks Aaron about good gifts for Valentine's Day.</p>
+                            </section>
+                        </li>
+                    
+                        <li>
+                            <h1 class="courseName">PSYC 135: Sleep and Dreams</h1>
+                            <section class="hiddenDescription">
+                                <p>Instructor: Dement, W.</p>
+                                <p><i>Drowsiness is Red Alert!</i></p>
+                                <p>This class taught me to prioritize sleep, specifically napping when I'm tired.</p>
+                                <h2>Sleep Journal</h2>
+                                    <p>Over 49 days, I spent an average of 7.513 hours sleeping.
+                                    My average bedtime was 1:30 AM, and my average wakeup time was 9:14 AM.
+                                    I felt most alert at 7:00 PM.</p>
+                                <h2>Outreach: Sleep Hygiene</h2>
+                                <ul>
+                                    <li>4-6 hours before bed: Preparing your body</li>
+                                    <li>The hour before bed: Setting the mood</li>
+                                    <li>Long-term preparation: Maintaining good habits</li>
+                                </ul>
+                                <h2>Syllabus</h2>
+                                <ul>
+                                    <li>Normal Sleep</li>
+                                    <li>Opponent Process Model</li>
+                                    <li>Dreams, Lucid Dreaming</li>
+                                    <li>Sleep Disorders</li>
+                                    <li>
+                                        <ul>
+                                            <li>Parasomnias</li>
+                                            <li>Obstructive Sleep Apnea</li>
+                                            <li>Narcolepsy</li>
+                                            <li>Restless Legs Syndrome</li>
+                                            <li>Insomnia</li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </section>
+                        </li>
+                    </ul>
+                </td>
+                <td>
+                    <!-- Soph-Spring -->
+                    <ul>
+                        <li class="CS MATH">
+                            <h1 class="courseName">CS 109: Introduction to Probability for Computer Scientists</h1>
+                            <section class="hiddenDescription">
+                                <p>Instructor: Sahami, M.</p>
+                                <p>An introductory course meant to provide students with tools for probabilistic analysis and modeling in computing.
+                                The course also provides an introduction to Machine Learning. </p>
+                                <h2>Syllabus</h2>
+                                <ul>
+                                    <li>Combinatorial Analysis</li>
+                                    <li>Axioms of Probability</li>
+                                    <li>Conditional Probability and Independence</li>
+                                    <li>Discrete Random Variables</li>
+                                    <li>Continuous Random Variables</li>
+                                    <li>Jointly-Distributed Random Variables</li>
+                                    <li>Expectation</li>
+                                    <li>Limit Theorems</li>
+                                    <li>Machine Learning, Parameter Estimation
+                                        <ul>
+                                            <li>Naive Bayes (R)</li>
+                                            <li>Logistic Regression (Java)</li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </section>
+                        </li>
+                    
+                        <li class="CS">
+                            <h1 class="courseName">CS 109L: Statistical Computing with R Laboratory</h1>
+                            <section class="hiddenDescription">
+                                <p>Instructor: Rothfels, J.</p>
+                                <h2>Assignments</h2>
+                                <ol>
+                                    <li>Chatterbot</li>
+                                    <li>Hypothesis testing, Open-ended data analysis</li>
+                                </ol>
+                                <h2>Syllabus</h2>
+                                <ul>
+                                    <li>R language fundamentals</li>
+                                    <li>Functional programming</li>
+                                    <li>Spam filtering</li>
+                                    <li>Bayesian prediction</li>
+                                    <li>Markov chain simulation</li>
+                                    <li>Monte Carlo integration</li>
+                                    <li>Hypothesis testing</li>
+                                    <li>Parameter estimation</li>
+                                    <li>Machine learning</li>
+                                </ul>
+                            </section>
+                        </li>
+                    
+                        <li class="CS">
+                            <h1 class="courseName">CS 155: Computer and Network Security</h1>
+                            <section class="hiddenDescription">
+                                <p>Instructors: Boneh, D., Mitchell, J.</p>
+                                <h2>Assignments</h2>
+                                <ol>
+                                    <li>Control hijacking
+                                        <ul>
+                                            <li>Buffer overflow</li>
+                                            <li>Format string</li>
+                                            <li>Double-free</li>
+                                        </ul>
+                                    </li>
+                                    <li>Web security
+                                        <ul>
+                                            <li>SQL injection</li>
+                                            <li>Cross-site request forgery</li>
+                                            <li>Cross-site scripting</li>
+                                        </ul>
+                                    </li>
+                                    <li>Network security
+                                        <ul>
+                                            <li>Packet traces</li>
+                                            <li>Scan detection</li>
+                                        </ul>
+                                    </li>
+                                </ol>
+                            </section>
+                        </li>
+                    
+                        <li>
+                            <h1 class="courseName">JAPANLNG 9: First-Year Japanese Language, Culture, and Communication</h1>
+                            <section class="hiddenDescription">
+                                <p>先生: Okano</p>
+                                <p>Skit: Aaron and Kelleen gossip about Sebastian.</p>
+                            </section>
+                        </li>
+                    
+                        <li>
+                            <h1 class="courseName">BIO 150: Human Behavioral Biology</h1>
+                            <section class="hiddenDescription">
+                                <p>Instructor: Sapolsky, R.</p>
+                                <p><a href="http://www.youtube.com/playlist?list=PL848F2368C90DDC3D">Lectures on YouTube</a></p>
+                                <ul>
+                                    <li><i>Just because it's complicated, that's not an excuse to do nothing.</i></li>
+                                    <li><i>You don't have to choose between being compassionate and being scientific. So, go and do both.</i></li>
+                                </ul>
+                                -Robert Sapolsky, 6/4/12
+                                <h2>Syllabus</h2>
+                                <ul>
+                                    <li>Evolution of Behavior
+                                        <i>A chicken is an egg's way of making another egg.<br />-Samuel Butler</i>
+                                    </li>
+                                    <li>Molecular Genetics</li>
+                                    <li>Behavioral Genetics</li>
+                                    <li>Recognizing Relatives
+                                        <i>I will lay down my life for two brothers or eight cousins.<br />-JBS Haldane</i>
+                                    </li>
+                                    <li>Ethology
+                                        <i>The experimental analysis of animal behavior is for those who like physics; and ethology is the study of animal behavior by those who like animals.<br />-Han-Lukus Teuber</i>
+                                    </li>
+                                    <li>Neurobiology, endocrinology, limbic system</li>
+                                    <li>Chaos/complexity
+                                        <i>The greatest challenge to science is to explain the prevalence of improbable, stable structure in the universe.<br />-David Krakauer</i>
+                                    </li>
+                                    <li>Sexual behavior</li>
+                                    <li>Aggression</li>
+                                    <li>Depression</li>
+                                    <li>Schizophrenia</li>
+                                    <li>Religion</li>
+                                    <li>Individuality</li>
+                                </ul>
+                            </section>
+                        </li>
+                    </ul>
+                </td>
+            </tr>
+        
+            <!-- 
+            JUNIOR YEAR 2012-2013
+            -->
+            
+            <tr>
+                <th scope="row"><span class="glyphicon glyphicon-collapse-down collapseIcon" id="JR-collapseIcon"></span> Jr 12-13</th>
+                <td>
+                    <!-- JR-Fall -->
+                    <ul>
+                        <li class="CS">
+                            <h1 class="courseName">CS 145: Introduction to Databases</h1>
+                            <section class="hiddenDescription">
+                                <p>Instructor: Widom, J.</p>
+                                <p>Database design and use of database management systems for applications. (Coursera)</p>
+                                <h2>AuctionBase</h2>
+                                <p>Searching for and bidding on auctions modeled after eBay. PHP frontend connecting to SQLite backend. Time travel.</p>
+                                <h2>Syllabus</h2>
+                                <ul>
+                                    <li>SQL
+                                        <ul>
+                                            <li>Indexes</li>
+                                            <li>Constraints and Triggers</li>
+                                            <li>Transactions</li>
+                                            <li>Views and Authorization</li>
+                                            <li>Recursion</li>
+                                            <li>Online Analytical Processing (OLAP)</li>
+                                        </ul>
+                                    </li>
+                                    <li>Relational Algebra</li>
+                                    <li>Relational Design Theory</li>
+                                    <li>Querying XML: XPath, XQuery, XSLT</li>
+                                    <li>Unified Modeling Language (UML)</li>
+                                    <li>JavaScript Object Notation (JSON)</li>
+                                    <li>NoSQL</li>
+                                </ul>
+                            </section>
+                        </li>
+                    
+                        <li class="CS">
+                            <h1 class="courseName">CS 242: Programming Languages</h1>
+                            <section class="hiddenDescription">
+                                <p>Instructor: Cooper, S.</p>
+                                <p>Central concepts in modern programming languages, impact on software development, language design trade-offs, and implementation considerations.</p>
+                                <h2>Syllabus</h2>
+                                <ul>
+                                    <li>Scope and Stack</li>
+                                    <li>Types, Polymorphism, Type Classes</li>
+                                    <li>Haskell Monads: IO Monad</li>
+                                    <li>Exceptions and Continuations: Garbage Collection</li>
+                                    <li>Computability, Modularity</li>
+                                    <li>Objects</li>
+                                    <li>Subtyping</li>
+                                    <li>Java Virtual Machine</li>
+                                    <li>Templates and Generics</li>
+                                    <li>Concurrency: Haskell STM, Parallelism</li>
+                                </ul>
+                            </section>
+                        </li>
+                    
+                        <li class="EE MATH">
+                            <h1 class="courseName">EE 263: Introduction to Linear Dynamical Systems</h1>
+                            <section class="hiddenDescription">
+                                <p>Instructor: Boyd, S.</p>
+                                <p>Applied linear algebra and linear dynamical systems with application to circuits, signal processing, communications, and control systems.</p>
+                                <h2>Syllabus</h2>
+                                <ul>
+                                    <li>QR factorization</li>
+                                    <li>Least-squares, Least-norm</li>
+                                    <li>Autonomous linear dynamical systems: matrix exponential</li>
+                                    <li>Eigenvectors and diagonalization</li>
+                                    <li>Symmetric matrices, quadratic forms, matrix norm</li>
+                                    <li>Singular value decomposition</li>
+                                </ul>
+                            </section>
+                        </li>
+                    
+                        <li>
+                            <h1 class="courseName">JAPANLNG 104A: Japanese for Professionals</h1>
+                            <section class="hiddenDescription">
+                                <p>先生: Tomiyama</p>
+                                <p>Speech: Disney World.</p>
+                            </section>
+                        </li>
+                        
+                        <li>
+                            <h1 class="courseName">MS&amp;E 193: Technology and National Security</h1>
+                            <section class="hiddenDescription">
+                                <p>Instructors: Hecker, S., Perry, W.</p>
+                                <p>The interaction of technology and national security policy from the perspective of history to implications for the new security imperative, homeland defense.</p>
+                                <h2>Guest Lecturers</h2>
+                                <ul>
+                                    <li>Dr. Joseph Martz: U.S. nuclear arsenal</li>
+                                    <li>Prof. Abbas Milani: Iran's nuclear program</li>
+                                    <li>Dr. Feroz Khan: Pakistan</li>
+                                    <li>Dr. Patrick Lincoln: Cybersecurity</li>
+                                    <li>Prof. Martha Crenshaw: Deterring nuclear terrorism</li>
+                                    <li>Dr. David Relman: Biosecurity</li>
+                                    <li>Lt. Gen. Karl Eikenberry: Afghanistan</li>
+                                    <li>Dr. Frank Pabian: Intelligence</li>
+                                </ul>
+                            </section>
+                        </li>
+                        
+                        <li>
+                            <h1 class="courseName">POLISCI 51K: Election 2012</h1>
+                            <section class="hiddenDescription">
+                                <p>Moderators: Kennedy, D., Reich, R., Steyer, J.</p>
+                                <h2>Topics</h2>
+                                <ul>
+                                    <li>Campaign Strategy
+                                        <ul>
+                                            <li>Mark McKinnon (Bush, McCain political consultant)</li>
+                                            <li>Chris Lehane (Gore press secretary)</li>
+                                            <li>Gary Segura (Stanford)</li>
+                                        </ul>
+                                    </li>
+                                    <li>Historical Perspective</li>
+                                    <li>The Economy
+                                        <ul>
+                                            <li>Kenneth Arrow (Stanford)</li>
+                                            <li>John Taylor (Stanford)</li>
+                                        </ul>
+                                    </li>
+                                    <li>Supreme Court
+                                        <ul>
+                                            <li>Pamela Karlan (Stanford Law School)</li>
+                                            <li>Goodwin Liu (Justice, Supreme Court of California)</li>
+                                        </ul>
+                                    </li>
+                                    <li>Foreign Policy
+                                        <ul>
+                                            <li>Michael Armacost (Stanford)</li>
+                                            <li>Michael McCurry (Presidential Debate Commission Co-Chair, Clinton Press Secretary)</li>
+                                        </ul>
+                                    </li>
+                                    <li>View from California
+                                        <ul>
+                                            <li>John Hennessy (President, Stanford)</li>
+                                            <li>Anna G. Eshoo (U.S. Representative for CA's 14th district)</li>
+                                            <li>Theresia Gouw Ranzetta (Accel Partners)</li>
+                                        </ul>
+                                    </li>
+                                    <li>Post-mortem
+                                        <ul>
+                                            <li>Steve Schmidt (McCain campaign strategist)</li>
+                                            <li>Tom Steyer (Farallon Capital Management, L.L.C)</li>
+                                            <li>Simon Jackman (Stanford)</li>
+                                        </ul>
+                                    </li>
+                                    <li>California Politics
+                                        <ul>
+                                            <li>Bruce Cain (Stanford)</li>
+                                            <li>Gavin Newsom (CA Lieutenant Governor)</li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </section>
+                        </li>
+                        
+                    </ul>
+                </td>
+                
+                <td>
+                    <!-- JR-Winter -->
+                    <ul>
+                        <li class="CS">
+                            <h1 class="courseName">CS 124: From Languages to Information</h1>
+                            <section class="hiddenDescription">
+                                <p>Instructor: Manning, C.</p>
+                                <p>The modern web world is a vast world of unstructured information... human language content, social networks, tags, etc. Learn how to make sense of it. </p>
+                                <h2>Syllabus</h2>
+                                <ul>
+                                    <li>Basic Text Processing</li>
+                                    <li>Edit Distance</li>
+                                    <li>Language Modeling</li>
+                                    <li>Spelling Correction and the Noisy Channel</li>
+                                    <li>Naïve Bayes and Text Classification</li>
+                                    <li>Sentiment Analysis</li>
+                                    <li>MaxEnt Classifiers</li>
+                                    <li>MEMM Sequence Models and Named Entity Tagging</li>
+                                    <li>Information Retrieval</li>
+                                    <li>Relation Extraction</li>
+                                    <li>XML: accessing structured information</li>
+                                    <li>Word Meaning and Word Similarity</li>
+                                    <li>Question Answering</li>
+                                    <li>Machine Translation</li>
+                                    <li>Web graphs, Links, and PageRank</li>
+                                    <li>Social Networks</li>
+                                </ul>
+                            </section>
+                        </li>
+                        <li class="CS masters">
+                            <h1 class="courseName">CS 149: Parallel Computing</h1>
+                            <section class="hiddenDescription">
+                                <p>Instructors: Aiken, A., Olukotun, O.</p>
+                                <p></p>
+                                <h2>Assignments</h2>
+                                <ol>
+                                    <li>Threads and locks: AJAX chat server</li>
+                                    <li>Software Transactional Memory: implementing a treap</li>
+                                    <li>MapReduce/Hadoop: searching Wikipedia for n-grams</li>
+                                    <li>OpenMP: image filtering</li>
+                                    <li>CUDA: image filtering</li>
+                                </ol>
+                                <h2>Other Models Covered</h2>
+                                <ul>
+                                    <li>SIMD, SPMD</li>
+                                    <li>Nested Parallelism</li>
+                                    <li>Thread-Level Speculation</li>
+                                </ul>
+                            </section>
+                        </li>
+                        <li class="CS masters">
+                            <h1 class="courseName">CS 261: Optimization and Algorithmic Paradigms</h1>
+                            <section class="hiddenDescription">
+                                <p>Instructor: Plotkin, S.</p>
+                                <p></p>
+                                <h2>Syllabus</h2>
+                                <ul>
+                                    <li>Steiner Tree Approximation Algorithm</li>
+                                    <li>The Traveling Salesman Problem</li>
+                                    <li>Matchings, Edge Covers, Node Covers, and Independent Sets</li>
+                                    <li>Intro to Linear Programming</li>
+                                    <li>Approximating Weighted Node Cover</li>
+                                    <li>Approximating Set Cover</li>
+                                    <li>Randomized Algorithms</li>
+                                    <li>Introduction to Network Flow</li>
+                                    <li>Matchings, Flows, Cuts and Covers in Bipartite Graphs</li>
+                                    <li>Partial Orders and Dilworth’s Theorem</li>
+                                    <li>Farkas Lemma and Proof of Duality</li>
+                                    <li>Examples of primal/dual relationships</li>
+                                    <li>Online Algorithms</li>                                  
+                                </ul>
+                            </section>
+                        </li>
+                        <li class="">
+                            <h1 class="courseName">JAPANLNG 104B: Japanese for Professionals</h1>
+                            <section class="hiddenDescription">
+                                <p>先生: Saito</p>
+                                <h2>Final Presentation</h2>
+                                <p>San Francisco</p>
+                            </section>
+                        </li>
+                        <li class="">
+                            <h1 class="courseName">ME 302: The Future of the Automobile</h1>
+                            <section class="hiddenDescription">
+                                <p>Instructor: Becker, J., Beiker, S.</p>
+                                <p>A specific focus on "Advanced Driver Assistance Systems", which help drivers to maneuver their vehicles through traffic.</p>
+                                <h2>Assignment Thesis</h2>
+                                <p>I fully embrace the convenience of driver assistance, and I am willing to give up the “fun” of driving for complete driver assistance.</p>
+                                <h2>Syllabus</h2>
+                                <ul>
+                                    <li>Introduction to Driver Assistance: Overview, Motivation and Categorization</li>
+                                    <li>Vehicle Stability Systems</li>
+                                    <li>Radar, Radar-based Systems</li>
+                                    <li>Lidar and Computer Vision Systems</li>
+                                    <li>Legal Aspects and Seminar Discussion: Needs and Challenges of Driving Automation</li>
+                                    <li>Other Systems, e.g. ultrasonic-based systems, safety, restraint systems</li>
+                                    <li>Outlook: Automated Driving and Future Systems</li>
+                                    <li>Self-driving Vehicle demo</li>
+                                </ul>
+                            </section>
+                        </li>
+                        <li class="">
+                            <h1 class="courseName">MS&amp;E 41: Financial Literacy</h1>
+                            <section class="hiddenDescription">
+                                <p>Instructor: Morrison, M.</p>
+                                <p></p>
+                                <h2>Syllabus</h2>
+                                <ul>
+                                    <li>Earning money: paychecks and withholding, benefits, other sources of income</li>
+                                    <li>Investing and Saving for the Future: banking, stocks/bonds/mutual funds, other investments</li>
+                                    <li>Taxes</li>
+                                    <li>Insurance</li>
+                                    <li>Credit cards and other loans: using debt wisely, comparing credit card offers</li>
+                                    <li>How much do things cost?: buying vs. leasing a car, budgeting for daily expenses</li>
+                                </ul>
+                            </section>
+                        </li>
+                    </ul>
+                </td>
+                
+                <td>
+                    <!-- JR-Spring -->
+                    <ul>
+                        <li class="">
+                            <h1 class="courseName">OSPKYOTO 17R: Religion and Japanese Culture</h1>
+                            <section class="hiddenDescription">
+                                <p>Instructor: Ludvik, C.</p>
+                                <p></p>
+                                <h2>Final Paper</h2>
+                                <h3>Explaining Declining Interest in Religion in Contemporary Japan</h3>
+                                <p>Both individualization and the fear of new religions have increased in contemporary Japan, helping to explain the decline in religious interest among contemporary Japanese.</p>
+                                <h2>Field Trips</h2>
+                                <ul>
+                                    <li>Nara</li>
+                                    <li>Sekizanzen'in</li>
+                                    <li>Torchlight No at Heian Jingu</li>
+                                    <li>Tenryuji</li>
+                                </ul>
+                                <h2>Syllabus</h2>
+                                <ul>
+                                    <li>Introduction to Shinto</li>
+                                    <li>Introduction to Buddhism</li>
+                                    <li>Tendai Buddhism</li>
+                                    <li>Shingon Buddhism</li>
+                                    <li>Discussion on Religion and Contemporary Japanese Society</li>
+                                    <li>Pilgrimage</li>
+                                    <li>Kamakura-period schools of Buddhism</li>
+                                    <li>No theater</li>
+                                </ul>
+                            </section>
+                        </li>
+                        <li class="">
+                            <h1 class="courseName">OSPKYOTO 21K: Second-Year Japanese Language, Culture, and Communication, First Quarter</h1>
+                            <section class="hiddenDescription">
+                                <p>先生: Eguchi, Tayama</p>
+                                <p></p>
+                                <h2>Final Presentation</h2>
+                                <p>日本の『びっくり』たいけん</p>
+                            </section>
+                        </li>
+                        <li class="">
+                            <h1 class="courseName">OSPKYOTO 40K: Introductory Electronics</h1>
+                            <section class="hiddenDescription">
+                                <p>Instructor: Ismail, M. ("Momo")</p>
+                                <p></p>
+                                <h2>Labs</h2>
+                                <ul>
+                                    <li>1A: Current, Voltage and Resistance Measurement</li>
+                                    <li>1B: Serial and Parallel Connections</li>
+                                    <li>2A: Introduction to Operational Amplifiers</li>
+                                    <li>2B: Audio Amplifier</li>
+                                    <li>2C: Single Supply Audio Amplifier</li>
+                                    <li>2D: Single Supply Audio Amplifier Enhancements</li>
+                                </ul>
+                                <h2>Syllabus</h2>
+                                <ul>
+                                    <li>Voltage, Current, Power</li>
+                                    <li>Resistive Circuit</li>
+                                    <li>Amplifier and Operational Amplifier</li>
+                                    <li>Capacitor and Inductor</li>
+                                    <li>Semiconductor, Solar Cells</li>
+                                    <li>Sinusoidal Signal</li>
+                                    <li>Frequency Analysis and Filter</li>
+                                    <li>Wireless Communications</li>
+                                </ul>
+                            </section>
+                        </li>
+                    </ul>
+                </td>
+            </tr>
+            
+            <!--
+            SENIOR YEAR 2013-14
+            -->
+            
+            <tr>
+                <th scope="row"><span class="glyphicon glyphicon-collapse-down collapseIcon" id="SR-collapseIcon"></span> Sr 13-14</th>
+                <td>
+                <!-- SR-Fall -->
+                    <ul>
+                        <li class="CS masters">
+                            <h1 class="courseName">CS 229: Machine Learning</h1>
+                            <section class="hiddenDescription">
+                                <p>Instructor: Ng, A.</p>
+                                <p></p>
+                                <h2>Project</h2>
+                                <p><a href="http://cs229.stanford.edu/proj2013/MathurNagaoNg-PredictingFlightOnTimePerformance.pdf">Predicting flight on-time performance</a>: Applied machine learning to predicting flight delay, optimizing features and SVM parameters (team of 3)</p>
+                                <h2>Syllabus</h2>
+                                <ul>
+                                    <li>Supervised Learning: 
+                                    Supervised learning setup. LMS.
+                                    Logistic regression. Perceptron. Exponential family.
+                                    Generative learning algorithms. Gaussian discriminant analysis. Naive Bayes.
+                                    Support vector machines.
+                                    Model selection and feature selection.
+                                    Ensemble methods: Bagging, boosting.
+                                    Evaluating and debugging learning algorithms.</li>
+                                    <li>Learning Theory:
+                                    Bias/variance tradeoff. Union and Chernoff/Hoeffding bounds.
+                                    VC dimension. Worst case (online) learning.
+                                    Practical advice on how to use learning algorithms.</li>
+                                    <li>Unsupervised Learning:
+                                    Clustering. K-means.
+                                    EM. Mixture of Gaussians.
+                                    Factor analysis.
+                                    PCA (Principal components analysis).
+                                    ICA (Independent components analysis).</li>
+                                    <li>Reinforcement Learning and Control:
+                                    MDPs. Bellman equations.
+                                    Value iteration and policy iteration.
+                                    Linear quadratic regulation (LQR). LQG.
+                                    Q-learning. Value function approximation.
+                                    Policy search. Reinforce. POMDPs.</li>
+                                </ul>
+                            </section>
+                        </li>
+                        <li class="CS">
+                            <h1 class="courseName">CS 274: Representations and Algorithms for Computational Molecular Biology</h1>
+                            <section class="hiddenDescription">
+                                <p>Instructor: Altman, R.</p>
+                                <p></p>
+                                <h2>Projects</h2>
+                                <ul>
+                                    <li>Sequence Alignment: global and local ends-free sequence alignment, with affine gap penalty</li>
+                                    <li>Clustering: K-nearest neighbors, K-means</li>
+                                    <li>Molecular Dynamics simulation</li>
+                                    <li>Chemoinformatics</li>
+                                </ul>
+                                <h2>Syllabus</h2>
+                                <ul>
+                                    <li>introduction to bioinformatics and computational biology</li>
+                                    <li>algorithms for alignment of biological sequences and structures</li>
+                                    <li>computing with strings</li>
+                                    <li>phylogenetic tree construction</li>
+                                    <li>hidden Markov models, Gibbs Sampling</li>
+                                    <li>basic structural computations on proteins</li>
+                                    <li>protein structure prediction, protein threading techniques</li>
+                                    <li>homology modeling</li>
+                                    <li>molecular dynamics and energy minimization</li>
+                                    <li>statistical analysis of 3D biological data</li>
+                                    <li>integration of data sources</li>
+                                    <li>knowledge representation and controlled terminologies for molecular biology</li>
+                                    <li>microarray analysis</li>
+                                    <li>machine learning (clustering and classification)</li>
+                                    <li>natural language text processing</li>
+                                </ul>
+                            </section>
+                        </li>
+                        <li class="MATH">
+                            <h1 class="courseName">MATH 118: Mathematics of Computation</h1>
+                            <section class="hiddenDescription">
+                                <p>Instructor: Ying, L.</p>
+                                <p>Notions of analysis and algorithms central to modern scientific computing.</p>
+                                <h2>Syllabus</h2>
+                                <ul>
+                                  <li>Solution of nonlinear equation and systems</li>
+                                  <li>Solution of systems of linear equations</li>
+                                  <li>Polynomial interpolation</li>
+                                  <li>Numerical integration</li>
+                                  <li>Numerical differentiation</li>
+                                  <li>Polynomial approximation</li>
+                                  <li>Initial value problems of ODEs</li>
+                                  <li>Eigenvalue computations</li>
+                                  <li>Fourier transforms</li>
+                                </ul>
+                            </section>
+                        </li>
+                        <li class="">
+                            <h1 class="courseName">TAPS 103: Beginning Improvising</h1>
+                            <section class="hiddenDescription">
+                                <p>Instructor: Klein, D.</p>
+                                <p>The improvisational theater techniques that teach spontaneity, cooperation, team building, and rapid problem solving, emphasizing common sense, attention to reality, and helping your partner. Based on TheatreSports by Keith Johnstone.</p>
+                            </section>
+                        </li>
+                    </ul>
+                </td>
+                
+                
+                
+                
+                <td>
+                <!-- SR-Winter -->
+                    <ul>
+                        <li class="CS">
+                            <h1 class="courseName">CS 142: Web Applications</h1>
+                            <section class="hiddenDescription">
+                                <p>Instructor: Ousterhout, J.</p>
+                                <p>Concepts and techniques used in constructing interactive web applications.</p>
+                                <h2>Syllabus</h2>
+                                <ul>
+                                    <li>HTML, CSS, URLs and Links, HTTP and HTTPS</li>
+                                    <li>The Ruby language</li>
+                                    <li>Rails, Active Record</li>
+                                    <li>SQL, Resources and Associations</li>
+                                    <li>Cookies and sessions, Forms</li>
+                                    <li>Javascript, The Document Object Model, Events, AJAX</li>
+                                    <li>Security: Network attacks, session attacks, isolation, code injection, phishing attacks</li>
+                                    <li>Large-Scale Applications</li>
+                                    <li>HTML5, Node.js</li>
+                                </ul>
+                            </section>
+                        </li>
+                        <li class="CS">
+                            <h1 class="courseName">CS 210A: Software Project Experience with Corporate Partners</h1>
+                            <section class="hiddenDescription">
+                                <p>Instructor: Borenstein, J.</p>
+                                <p>Two-quarter project course. Focus is on real-world software development.</p>
+                                <p>Corporate partners seed projects with loosely defined challenges from their R&D labs; students innovate to build their own compelling software solutions. Student teams are treated as start-up companies with a budget and a technical advisory board comprised of instructional staff and corporate liaisons. Teams will typically travel to the corporate headquarters of their collaborating partner, meaning some teams will travel internationally. Open loft classroom format such as found in Silicon Valley software companies.</p>
+                                <p>Exposure to: current practices in software engineering; techniques for stimulating innovation; significant development experience with creative freedoms; working in groups; real-world software engineering challenges; public presentation of technical work; creating written descriptions of technical work.</p>
+                            </section>
+                        </li>
+                        <li class="CS masters">
+                            <h1 class="courseName">CS 246: Mining Massive Data Sets</h1>
+                            <section class="hiddenDescription">
+                                <p>Instructor: Leskovec, J.</p>
+                                <p>The course will discuss data mining and machine learning algorithms for analyzing very large amounts of data. The emphasis will be on Map Reduce as a tool for creating parallel algorithms that can process very large amounts of data.</p>
+                                <h2>Syllabus</h2>
+                                <ul>
+                                    <li>Introduction and MapReduce</li>
+                                    <li>Association Rules: Frequent itemsets and Association rules</li>
+                                    <li>Near Neighbor Search in High Dimensional Data</li>
+                                    <li>Locality Sensitive Hashing (LSH)</li>
+                                    <li>Dimensionality reduction: SVD and CUR</li>
+                                    <li>Recommendation Systems</li>
+                                    <li>Clustering</li>
+                                    <li>Link Analysis: Personalized PageRank, Hubs and Authorities</li>
+                                    <li>Web spam and TrustRank</li>
+                                    <li>Proximity search on Graphs: Random Walks with Restarts</li>
+                                    <li>Large scale supervised machine learning (1): k-nearest neighbor, Perceptron</li>
+                                    <li>Large scale supervised machine learning (2): Classification and regression trees</li>
+                                    <li>Large scale supervised machine learning (3): Support Vector Machines</li>
+                                    <li>Mining data streams</li>
+                                    <li>Mining the Web for Structured Data, Relation extraction</li>
+                                    <li>Web Advertising</li>
+                                </ul>
+                            </section>
+                        </li>
+                        <li class="SOC">
+                            <h1 class="courseName">SOC 142: Sociology of Gender</h1>
+                            <section class="hiddenDescription">
+                                <p>Instructor: Fisk, S.</p>
+                                <p>Gender inequality in contemporary American society and how it is maintained.</p>
+                                <h2>Syllabus</h2>
+                                <ul>
+                                    <li>Gender, Sex, Difference and Inequality</li>
+                                    <li>Why the Difference? Why the Inequality? Understanding Gender as a Multilevel System</li>
+                                    <li>The Gender System: Gender, Work and Family</li>
+                                </ul>
+                            </section>
+                        </li>
+                    </ul>
+                </td>
+                
+                
+                
+                <td>
+                <!-- SR-Spring -->
+                    <ul>
+                        <li class="CS">
+                            <h1 class="courseName">CS 210B: Software Project Experience with Corporate Partners</h1>
+                            <section class="hiddenDescription">
+                                <p>Instructor: Borenstein, J.</p>
+                                <p>Refer to CS210A for description.</p>
+                            </section>
+                        </li>
+                        <li class="POLISCI">
+                            <h1 class="courseName">POLICSCI 2: Introduction to American National Government and Politics</h1>
+                            <section class="hiddenDescription">
+                                <p>Instructor: Brady, D.; Cain, B.</p>
+                                <p>America has a very unique structure that combines a Presidential executive, separation of powers, strong federalism and constitutional review by the courts. Critics say that the system is broken by special interest power and partisan polarization. But is it broken or merely operating to obstruct change unless there is a sufficient consensus? This course will look at the way policy is made and implemented in US government at the national and local level, and consider whether institutions facilitate or hinder good politics and public policy.</p>
+                                <h2>Syllabus</h2>
+                                <ul>
+                                    <li>Constitutional Flaws and Governing Constraints: Federalism, Separation of Power and the Court’s Role: A Dialogue</li>
+                                    <li>Fighting Over Election Rules: Federalism and Elections</li>
+                                    <li>Money and Elections</li>
+                                    <li>Back to the Future? Partisanship now and in the 19th century</li>
+                                    <li>A Battle for Meaning: Elections and Mandates</li>
+                                    <li>The President’s Evolving Role</li>
+                                    <li>Congress Past and Present</li>
+                                    <li>Policy Making & Court: Referee or Actor</li>
+                                    <li>Policy Gridlock: Historical Record</li>
+                                    <li>Economic Inequality and Democracy</li>
+                                    <li>Insecurity</li>
+                                    <li>Privacy</li>
+                                </ul>
+                            </section>
+                        </li>
+                        <li class="">
+                            <h1 class="courseName">GES 1A: Introduction to Geology: The Physical Science of the Earth</h1>
+                            <section class="hiddenDescription">
+                                <p>Instructor: Hilley, G.</p>
+                                <p>Focus is on the physical and chemical processes of heat and mass transfer within the earth and its fluid envelopes, including deep-earth, crustal, surface, and atmospheric processes. Topics include the dynamics of and interactions between the inner earth, plate tectonics, surface processes, and atmospheric processes such as climate change and global warming.</p>
+                            </section>
+                        </li>
+                    </ul>
+                </td>
+            </tr>
+        
+            <tr>
+                <th scope="row"><span id="MS-collapseIcon" class="glyphicon glyphicon-collapse-down collapseIcon"></span> MS 14-15</th>
+                <td>
+                <!-- MS-Fall -->
+                    <ul>
+                        <li class="CS masters">
+                            <h1 class="courseName">CS 221: Artificial Intelligence: Principles and Techniques</h1>
+                            <section class="hiddenDescription">
+                                <p>Instructor: Liang, P.</p>
+                                <p>Specific topics include search, constraint satisfaction, game playing, Markov decision processes, graphical models, machine learning, and logic.</p>
+                                <h2>Syllabus</h2>
+                                <ul>
+                                    <li></li>
+                                </ul>
+                            </section>
+                        </li>
+                        <li class="CS masters">
+                            <h1 class="courseName">CS 224N: Natural Language Processing</h1>
+                            <section class="hiddenDescription">
+                                <p>Instructor: Manning, C.</p>
+                                <p>Methods for processing human language information and the underlying computational properties of natural languages.</p>
+                                <h2>Syllabus</h2>
+                                <ul>
+                                    <li></li>
+                                </ul>
+                            </section>
+                        </li>
+                        <li class="CS masters">
+                            <h1 class="courseName">CS 224W: Social and Information Networks</h1>
+                            <section class="hiddenDescription">
+                                <p>Instructor: Leskovec, J.</p>
+                                <p>The course will cover recent research on the structure and analysis of such large social and information networks and on models and algorithms that abstract their basic properties. Class will explore how to practically analyze large-scale network data and how to reason about it through models for network structure and evolution.</p>
+                                <h2>Syllabus</h2>
+                                <ul>
+                                    <li></li>
+                                </ul>
+                            </section>
+                        </li>
+                    </ul>
+                </td>
+                
+                
+                
+                <td>
+                <!-- MS-Winter -->
+                    <ul>
+                        <li class="CS masters">
+                            <h1 class="courseName">CS 229T: Statistical Learning Theory</h1>
+                            <section class="hiddenDescription">
+                                <p>Instructor: Liang, P.</p>
+                                <p>How do we formalize what it means for an algorithm to learn from data? This course focuses on developing mathematical tools for answering this question. We will present various common learning algorithms and prove theoretical guarantees about them.</p>
+                                <h2>Syllabus</h2>
+                                <ul>
+                                    <li>Online learning</li>
+                                    <li>Kernel methods</li>
+                                    <li>Generalization bounds (uniform convergence)</li>
+                                    <li>Spectral methods</li>
+                                </ul>
+                            </section>
+                        </li>
+                        <li class="CS masters">
+                            <h1 class="courseName">CS 255: Introduction to Cryptography</h1>
+                            <section class="hiddenDescription">
+                                <p>Instructor: Boneh, D.</p>
+                                <p>Theory and practice of cryptographic techniques used in computer security.</p>
+                                <h2>Syllabus</h2>
+                                <ul>
+                                    <li></li>
+                                </ul>
+                            </section>
+                        </li>
+                        <li class="masters MATH">
+                            <h1 class="courseName">EE 364A: Convex Optimization I</h1>
+                            <section class="hiddenDescription">
+                                <p>Instructor: Boyd, S.</p>
+                                <p>Convex sets, functions, and optimization problems.</p>
+                                <h2>Syllabus</h2>
+                                <ul>
+                                    <li></li>
+                                </ul>
+                            </section>
+                        </li>
+                    </ul>
+                </td>
+                
+                
+                
+                <td>
+                <!-- MS-Spring -->
+                    <ul>
+                        <li class="CS masters">
+                            <h1 class="courseName">CS 168: The Modern Algorithmic Toolbox</h1>
+                            <section class="hiddenDescription">
+                                <p>Instructors: Roughgarden, T., Valiant, G.</p>
+                                <p>This course will provide a rigorous and hands-on introduction to the central ideas and algorithms that constitute the core of the modern algorithms toolkit.</p>
+                                <h2>Syllabus</h2>
+                                <ul>
+                                    <li>Hashing</li>
+                                    <li>Dimension reduction and LSH</li>
+                                    <li>Boosting</li>
+                                    <li>Linear programming</li>
+                                    <li>Gradient descent</li>
+                                    <li>Sampling</li>
+                                    <li>Basic data representation and coding</li>
+                                </ul>
+                            </section>
+                        </li>
+                        <li class="CS masters">
+                            <h1 class="courseName">CS 224U: Natural Language Understanding</h1>
+                            <section class="hiddenDescription">
+                                <p>Instructors: MacCartney, B., Potts, C.</p>
+                                <p>Machine understanding of human language.</p>
+                                <h2>Syllabus</h2>
+                                <ul>
+                                    <li></li>
+                                </ul>
+                            </section>
+                        </li>
+                        <li class="CS masters">
+                            <h1 class="courseName">CS 276: Information Retrieval and Web Search</h1>
+                            <section class="hiddenDescription">
+                                <p>Instructors: Manning, C.; Nayak, P.; Raghavan, P.</p>
+                                <p></p>
+                                <h2>Syllabus</h2>
+                                <ul>
+                                    <li>Text information retrieval systems</li>
+                                    <li>efficient text indexing</li>
+                                    <li>Boolean, vector space, and probabilistic retrieval models</li>
+                                    <li>ranking and rank aggregation</li>
+                                    <li>evaluating IR systems</li>
+                                    <li>Text clustering and classification</li>
+                                    <li>classification algorithms</li>
+                                    <li>latent semantic indexing, taxonomy induction</li>
+                                    <li>Web search engines including crawling and indexing</li>
+                                    <li>link-based algorithms</li>
+                                    <li>web metadata</li>
+                                </ul>
+                            </section>
+                        </li>
+                        
+                    </ul>
+                </td>
+            </tr>
+        
+            </tbody>
+        </table>
+          <!-- four-year-plan END -->
+                  
+      <!-- FOOTER -->
+      <footer>
+        <i>Powered by a <a href="http://getbootstrap.com/javascript/#modals">Bootstrap modal</a> and <a href="http://www.jquery.com">jQuery</a> DOM manipulation.</i>
+        <p class="last-modified">Last modified: <!--#echo var="LAST_MODIFIED"--></p>
+        <p class="pull-right"><a href="#">Back to top</a></p>
+      </footer>
+        
+    </div> <!-- ./pageContainer -->
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="js/jquery-2.1.1.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/four-year-plan.js"></script>
+  </body>
+</html>

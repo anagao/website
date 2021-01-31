@@ -1,0 +1,56 @@
+/* Insert your custom styles here */
+#portal_left {
+	width: 170px;
+}
+
+#portal_center {
+	width: 565px;
+}
+
+#news_section {
+	width: 560px;
+	border-right: none;
+}
+
+#news_section ul li {
+	font-size: 1.1em;
+}
+
+/* just large enough for my Google+ URL */
+.sidebar{
+	width: 160px;
+}
+
+/*
+#socialNetworksList > li{
+	background-color: LightGray;
+	}
+*/
+
+.logo {
+	margin: 0px 10px; 
+	height: 32px; 
+	width: 32px;
+	float: left;
+}
+
+/* Do this myself? Get a new Quora logo?*/
+#quoraLogo {
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+}
+
+#showMoreVersions {
+	color: #565347;
+	text-decoration: none;
+}
+
+#showMoreVersions:hover {
+	/* necessary cause it's not an <a> tag */
+	color: #820000;
+	cursor: pointer;
+}
+
+@media only screen and (max-width: 640px) {
+/* Insert your mobile styles here */
+}

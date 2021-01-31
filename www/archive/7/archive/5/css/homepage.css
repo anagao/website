@@ -1,0 +1,81 @@
+/* Aaron Nagao, CSS. Last updated 7/3/11. */
+
+/* HEADER */
+header {
+	background-color: #3b5998;
+}
+#update-time {
+	float:right;
+}
+h1 {
+	color: White;
+	padding: 5px 10px; /* top/bottom=5, left/right=10 */
+}
+nav {
+	background-color: #d4dae8;
+	font-weight: bold;
+}
+nav ul li {
+	display: inline;
+	padding-left: 1em;
+}
+
+
+/* BODY */
+body {
+	font-family: "lucida grande" ,tahoma,verdana,arial,sans-serif;  
+    font-size: 12px;  
+    color: #333333;
+}
+
+/* START Version History Gallery */
+#images {
+	width: 605px;
+	height: 605px;
+	/*position: relative; allows for layering */
+	float: left;
+	margin: 0px 20px;
+	}
+	
+#images img {
+	width: 600px;
+	height: 600px;
+	border: 2px solid;
+	border-radius:25px;
+	position: absolute; /* allows for layering */
+	
+	opacity: 0; /* initially 0 */
+	transition: all 1s;
+    -moz-transition: all 1s;
+    -webkit-transition: all 1s;
+}
+
+#images img:first-child {
+	opacity: 1; /*by default, first child is visible*/
+}
+
+#images img:target {
+    opacity: 1; /*when clicked, change opacity*/
+}
+
+#slider {
+margin: 20px auto;
+}
+#slider a {
+    text-decoration: none;
+    background: #ECEEF5;
+    border: 1px solid #CAD4E7;
+    border-radius:5px;
+    padding: 4px 6px;
+    color: #3B5998;
+}
+#slider a:hover {
+    border-color: #9DACCE;
+}
+/* END Version History Gallery */
+
+
+/* FOOTER */
+footer {
+	clear: both; /* floating is not allowed on both sides */
+}

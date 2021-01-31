@@ -1,0 +1,58 @@
+/* due to fixed navbar */
+body { padding-top: 20px; }
+
+.linkedin-icon {
+	background-image: url(http://www.google.com/s2/u/0/favicons?domain=linkedin.com);
+	display: inline-block;
+	top: 1px;
+	position: relative;
+	height: 16px;
+	width: 16px;
+}
+/* LinkedIn link */
+.contactInfo {
+	margin-top: 1em;
+}
+
+dl.hresume dt {
+	/* give section headers (e.g. Summary, Education, Professional Experience) h2 styling */
+	font-size: 27px;
+	color: #444444;
+	font-weight: 300;
+	
+	border-bottom: 1px solid #ddd; /* light gray, like .page-header border-bottom */
+	margin-bottom: 10px;
+}
+
+h3 { /* Institutions (e.g. Stanford, IBM) */
+	font-size: 1.5em;
+	margin-top: 0;
+}
+
+/* years in resume (e.g. "Web Development Intern, June-Sept. 2012") */
+h3 span { 
+	font-size: 0.75em;
+	margin-left: 20px;
+}
+	
+.extraInfo, .extraInfo h3 { color: Gray; }
+
+/* "Show more..." or "Hide older entries..." */
+.slider {
+	font-style: italic;
+}
+
+.affix {
+	top: 70px;
+	min-width: 263px;
+}
+
+/* Mobile
+------------------------- */
+@media (max-width: 768px) {
+  .affix {
+    position: static;
+    width: auto;
+    top: 0;
+  }
+}

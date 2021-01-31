@@ -15,7 +15,6 @@ jobs:
           username: anagao
           password: ${{ secrets.STANFORD_PASSWORD }}
           
-          source: "www/*"
+          source: "www"
           target: "www"
-          overwrite: true
-          strip_components: 1
+          rm: true
