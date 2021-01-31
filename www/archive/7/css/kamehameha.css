@@ -1,8 +1,0 @@
-/* due to fixed navbar */
-body { padding-top: 20px; }
-
-table td h3 {
-	/* override normal h3 behavior */
-	font-size: 1.3em;
-	margin-top: 10px;
-}
