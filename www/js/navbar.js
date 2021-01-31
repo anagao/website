@@ -4,7 +4,9 @@ $(document).ready(function() {
     .then(text => {
         document.querySelector('#navbar').innerHTML = text;
         
-        var currPage = location.pathname.split(/[\/.]/)[1];  // split("/stanford.html", /.) => stanford
+        // mark the current page as "active"
+        var htmlFilename = window.location.pathname.split("/").pop();  // "stanford.html"
+        var currPage = htmlFilename.replace(".html", "");
         document.querySelector('#navitem-' + currPage).classList.add('active');
      });
 });
