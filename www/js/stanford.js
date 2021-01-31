@@ -58,11 +58,6 @@ ready(() => {
     // "All" is chosen by default
     $("#all-filter").button("toggle");  // highlight filter button
     $("#all-GPA").show();
-    
-    // Collapse the freshman, sophomore, and junior rows onpageload
-    $("#FR-collapseIcon").trigger( "click" );
-    $("#SO-collapseIcon").trigger( "click" );
-    $("#JR-collapseIcon").trigger( "click" );
 });
 
 /* Helper function, called when filter button is clicked
