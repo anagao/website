@@ -22,47 +22,7 @@
   </head>
 
   <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-      <!-- on smaller-width screens (mobile), press = button to see navbar items -->
-      <div class="navbar-header">
-        <button type="button" class="navbar-toggler" data-toggle="collapse" data-target=".navbar-collapse">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <a class="navbar-brand" href="./"><b>Aaron Nagao</b></a>
-      </div>
-
-      <div class="navbar-collapse collapse">
-        <ul class="navbar-nav mr-auto">
-            <li class="nav-item">
-                <a class="nav-link" href="./"><i class="fas fa-home"></i> Home</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="resume.html"><i class="fas fa-file"></i> Resume</a>
-            </li>
-            <li class="nav-item active">
-                <a class="nav-link" href="#"><i class="fas fa-tree"></i> Stanford University</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="kamehameha.html"><i class="fas fa-graduation-cap"></i> Kamehameha High School</a>
-            </li>
-            <li class="nav-item dropdown">
-              <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown"><i class="fas fa-fast-backward"></i> Website Archive <b class="caret"></b></a>
-              <ul class="dropdown-menu">
-                <li><a href="archive.html">Archive Landing Page</a></li>
-                <li class="divider"></li>
-                <li class="dropdown-header">List of Versions</li>
-                <li><a href="archive/1/" target="_blank">Version 1 (2006)</a></li>
-                <li><a href="archive/2/" target="_blank">Version 2 (2006-07)</a></li>
-                <li><a href="archive/3/" target="_blank">Version 3 (2007-09)</a></li>
-                <li><a href="archive/4/" target="_blank">Version 4 (2009-11)</a></li>
-                <li><a href="archive/5/" target="_blank">Version 5 (2011-12)</a></li>
-                <li><a href="archive/6/" target="_blank">Version 6 (2012-13)</a></li>
-              </ul>
-            </li>
-          </ul>
-        </div><!-- /navbar-collapse -->
-    </nav>
-    <!-- navbar END -->
+    <div id='navbar'></div><!-- shared navbar loaded via AJAX navbar.js -->
 
     <div class="container"> <!-- wrap the page (minus navbar) in a container for nice padding -->
 
@@ -73,6 +33,7 @@
         <p>I graduated from Stanford University with a M.S. Computer Science in June 2015, and a B.S. Computer Science with distinction in June 2014.</p>
     
         <header class="table-header">
+            Filter: 
             <div class="btn-group btn-group-sm" data-toggle="buttons">
                 <label class="btn btn-primary" id="all-filter">
                     <input type="radio" name="subjectOptions">All
@@ -101,8 +62,9 @@
           <div class="modal-dialog">
             <div class="modal-content">
               <div class="modal-header">
-                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
                 <h4 class="modal-title" id="descriptionModal-title"></h4>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
               </div>
               <div class="modal-body" id="descriptionModal-body"></div>
               <div class="modal-footer">
@@ -1617,6 +1579,7 @@
     <!-- Placed at the end of the document so the pages load faster -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+    <script src="js/navbar.js"></script>
     <script src="js/stanford.js"></script>
   </body>
 </html>

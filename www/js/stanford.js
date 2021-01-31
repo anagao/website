@@ -1,12 +1,8 @@
 var currCourseElement = null;    //global variable
 
-var ready = (callback) => {
-  if (document.readyState != "loading") callback();
-  else document.addEventListener("DOMContentLoaded", callback);
-}
-
-ready(() => { 
+$(document).ready(function() {
     /* Do things after DOM has fully loaded */ 
+
     /* ----- 1) Set on-click handlers ----- */
 
     //Click "Fr 10-11" -> show/hide the row
@@ -71,10 +67,8 @@ function courseFilter(subject) {
     // Show only courses whose CSS class match <subject>
     if (subject === "all") { // no filter
         allCourseLI.show();
-        $("#description").html("Select a course:");
     } else {
         allCourseLI.filter("." + subject).show();
-        $("#description").html("Select a " + subject + " course:");
     }
 
     // Check global var, and if a course is currently selected, 

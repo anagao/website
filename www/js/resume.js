@@ -1,4 +1,4 @@
-$(document).ready(function () {
+$(document).ready(function() {
     $(".showMore").nextAll().hide();
 
     $(".showMore-icon").click(function () {
