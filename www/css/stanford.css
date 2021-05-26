@@ -3,11 +3,15 @@
 }
 
 .highlight {
-	color: #d9230f; /* when you click on course name, course name turns red */
+	color: #3459e6; /* when you click on course name, course name turns blue */
 }
 
 .collapseIcon {
 	cursor: pointer;
+}
+
+input.subjectOptions {
+	margin-right: 5px;
 }
 
 h1.courseName {

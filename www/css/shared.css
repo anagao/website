@@ -1,3 +1,7 @@
 .container {
-    max-width: 78em; /* matches resume, so lines break similar to printed resume */
+    padding-top: 1em;
+}
+
+.navbar-brand {
+	padding-left: 0.5em;
 }

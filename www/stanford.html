@@ -36,24 +36,24 @@
             Filter: 
             <div class="btn-group btn-group-sm" data-toggle="buttons">
                 <label class="btn btn-primary" id="all-filter">
-                    <input type="radio" name="subjectOptions">All
+                    <input type="radio" class="subjectOptions">All
                 </label>
                 <label class="btn btn-primary" id="CS-filter">
-                    <input type="radio" name="subjectOptions">Computer Science
+                    <input type="radio" class="subjectOptions">Computer Science
                 </label>
                 <label class="btn btn-primary" id="math-filter">
-                    <input type="radio" name="subjectOptions">Math
+                    <input type="radio" class="subjectOptions">Math
                 </label>
                 <label class="btn btn-primary" id="masters-filter">
-                    <input type="radio" name="subjectOptions">Master's
+                    <input type="radio" class="subjectOptions">Master's
                 </label>
             </div>
 
             <!-- final GPAs -->
-            <p class="GPA float-right" id="all-GPA"></p>
-            <p class="GPA float-right" id="CS-GPA">Computer Science GPA: 3.92</p>
-            <p class="GPA float-right" id="MATH-GPA">Math GPA: 4.04</p>
-            <p class="GPA float-right" id="masters-GPA">Master's GPA: 3.81</p>
+            <p class="GPA float-end" id="all-GPA"></p>
+            <p class="GPA float-end" id="CS-GPA">Computer Science GPA: 3.92</p>
+            <p class="GPA float-end" id="MATH-GPA">Math GPA: 4.04</p>
+            <p class="GPA float-end" id="masters-GPA">Master's GPA: 3.81</p>
         </header>
     
         <!-- four-year-plan START -->
@@ -63,12 +63,11 @@
             <div class="modal-content">
               <div class="modal-header">
                 <h4 class="modal-title" id="descriptionModal-title"></h4>
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true">&times;</span>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
               </div>
               <div class="modal-body" id="descriptionModal-body"></div>
               <div class="modal-footer">
-                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
               </div>
             </div>
           </div>
@@ -1568,7 +1567,7 @@
                   
       <!-- FOOTER -->
       <footer>
-        <i>Powered by a <a href="https://getbootstrap.com/docs/4.6/components/modal/">Bootstrap 4 modal</a> and <a href="http://www.jquery.com">jQuery</a> DOM manipulation.</i>
+        <i>Powered by a <a href="https://getbootstrap.com/docs/5.0/components/modal/">Bootstrap 5 modal</a> and <a href="http://www.jquery.com">jQuery</a> DOM manipulation.</i>
       </footer>
         
     </div> <!-- ./pageContainer -->
@@ -1578,7 +1577,7 @@
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
     <script src="js/navbar.js"></script>
     <script src="js/stanford.js"></script>
   </body>
