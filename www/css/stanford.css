@@ -1,9 +1,19 @@
+.bg-primary {
+	/* Stanford: Cardinal red */
+    background-color: #8C1515 !important;
+}
+
+.btn-primary:active, .btn-primary {
+	background-color: #8C1515 !important;
+	border-color: #8C1515 !important;
+}
+
 .GPA {
 	font-style: italic;
 }
 
 .highlight {
-	color: #3459e6; /* when you click on course name, course name turns blue */
+	color: #8C1515; /* when you click on course name, course name turns blue */
 }
 
 .collapseIcon {
